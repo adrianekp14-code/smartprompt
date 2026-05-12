@@ -659,7 +659,7 @@ const Speech = (() => {
   let recog = null, active = false, restartTimer = null;
   let committed = [];
   let lastAdvance = 0, lineStart = 0;
-  const COOLDOWN = 900;
+  const COOLDOWN = 400;
   const MIN_LINE_MS = 800;
 
   function reset() { committed = []; lineStart = Date.now(); }
@@ -692,11 +692,6 @@ const Speech = (() => {
 
       const now = Date.now();
       if (now - lastAdvance < COOLDOWN) return;
-
-      // Scale minimum time by paragraph length: ~100ms per word, min 600ms, max 2s
-      const paraWordCount = norm(lines[currentIdx] || '').split(' ').filter(Boolean).length;
-      const minTime = Math.min(Math.max(paraWordCount * 100, 600), 2000);
-      if (now - lineStart < minTime) return;
 
       const target = lines[currentIdx] || '';
       if (target && shouldAdvance(target, committed, interimWords)) {
