@@ -513,7 +513,7 @@ body.fs #fs-hint { display: block; }
   <div class="phdr">
     <div>
       <h2>Edit Script</h2>
-      <p>Type paragraphs naturally · leave a blank line between paragraphs · sentences auto-split into cues</p>
+      <p>One paragraph per block · leave a blank line between paragraphs</p>
     </div>
     <button class="ib" onclick="closePanels()">
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 3l10 10M13 3L3 13"/></svg>
@@ -737,37 +737,17 @@ const Speech = (() => {
 
 /* ───────────────────────────────────────────
    SCRIPT PARSING
-   Auto-splits paragraphs into individual sentences.
-   Each sentence = one cue the speech tracker targets.
-   Blank lines in the textarea = paragraph breaks.
+   Each blank-line-separated block = one paragraph cue.
+   No sentence splitting — paragraphs stay whole.
 ─────────────────────────────────────────── */
-let rawScript = '';        // original user text (for edit panel)
-let paraBreaks = new Set(); // indices before which a divider appears
+let rawScript = '';
 
 function parseScript(raw) {
   rawScript = raw;
-  const result = [];
-  paraBreaks = new Set();
-
-  // Split on blank lines to get paragraphs
-  const paragraphs = raw.split(/\n{2,}/).map(p => p.replace(/\n/g, ' ').trim()).filter(Boolean);
-
-  paragraphs.forEach((para, pi) => {
-    // Mark a paragraph break before all except the first
-    if (pi > 0) paraBreaks.add(result.length);
-
-    // Split paragraph into sentences at . ! ? followed by a space + capital letter
-    // or end of string. Keeps abbreviations like "Mr." intact (no space after).
-    const sentences = para
-      .split(/(?<=[.!?])\s+(?=[A-Z"'])|(?<=[.!?])$/)
-      .map(s => s.trim())
-      .filter(Boolean);
-
-    // If no sentence boundary found (e.g. one long run-on), keep as-is
-    sentences.forEach(s => result.push(s));
-  });
-
-  return result;
+  // Split on one or more blank lines; join internal newlines with a space
+  return raw.split(/\n{2,}/)
+    .map(p => p.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim())
+    .filter(Boolean);
 }
 
 /* ───────────────────────────────────────────
@@ -776,16 +756,7 @@ function parseScript(raw) {
 function buildDisplay() {
   const wrap = document.getElementById('lines-wrap');
   wrap.innerHTML = ''; lineEls = [];
-
   lines.forEach((text, i) => {
-    // Insert paragraph break divider if needed
-    if (paraBreaks.has(i)) {
-      const div = document.createElement('div');
-      div.className = 'para-break';
-      div.innerHTML = '<span>New Paragraph</span>';
-      wrap.appendChild(div);
-    }
-
     const el = document.createElement('div');
     el.className = 'line';
     el.textContent = text;
@@ -793,14 +764,14 @@ function buildDisplay() {
     wrap.appendChild(el);
     lineEls.push(el);
   });
-
   render(false);
 }
 
 function render(animate) {
   lineEls.forEach((el, i) => el.classList.toggle('active', i === currentIdx));
   document.getElementById('prog').textContent = `${currentIdx + 1} / ${lines.length}`;
-  smoothCenter(lineEls[currentIdx], animate ? scrollDur : 0);
+  // On a new paragraph, center the TOP THIRD so there's room to scroll down through it
+  scrollToParaProgress(lineEls[currentIdx], 0, animate ? scrollDur : 0);
 }
 
 function jumpTo(idx) {
@@ -817,6 +788,57 @@ function advance() {
   currentIdx++;
   Speech.lineChanged();
   render(true);
+}
+
+// Scroll so that `progress` (0–1) through the active paragraph is centered.
+// progress=0 → top of paragraph centered; progress=1 → bottom centered.
+// This gives the "scrolling through a paragraph" studio teleprompter effect.
+let wordRafId = null;
+function scrollToParaProgress(el, progress, dur) {
+  const sc = document.getElementById('scroller');
+  if (!el || !sc) return;
+
+  // Target: the point `progress` through the element should be vertically centered
+  const target = el.offsetTop + el.offsetHeight * progress - sc.clientHeight / 2;
+  const startPos = sc.scrollTop;
+  const dist = target - startPos;
+  if (Math.abs(dist) < 1) return;
+
+  if (dur <= 0) { sc.scrollTop = target; return; }
+
+  if (wordRafId) { cancelAnimationFrame(wordRafId); wordRafId = null; }
+  const t0 = performance.now();
+  const step = now => {
+    const p = Math.min((now - t0) / dur, 1);
+    sc.scrollTop = startPos + dist * ease(p);
+    if (p < 1) wordRafId = requestAnimationFrame(step);
+    else wordRafId = null;
+  };
+  wordRafId = requestAnimationFrame(step);
+}
+
+// Match how far through the paragraph the speaker has gotten (0–1).
+// Sequentially scans committed+interim words against paragraph words.
+function matchProgress(paraText, allWords) {
+  const paraWords = norm(paraText).split(' ').filter(Boolean);
+  if (!paraWords.length || !allWords.length) return 0;
+  let matched = 0;
+  let searchFrom = 0;
+  for (const word of allWords) {
+    if (word.length < 2) continue;
+    const lookahead = Math.min(searchFrom + 5, paraWords.length);
+    for (let i = searchFrom; i < lookahead; i++) {
+      const pw = paraWords[i];
+      // Match if word equals or starts with first 3+ chars of the spoken word
+      const matchLen = Math.max(3, word.length - 1);
+      if (pw === word || pw.startsWith(word.slice(0, matchLen)) || word.startsWith(pw.slice(0, matchLen))) {
+        matched = i + 1;
+        searchFrom = i + 1;
+        break;
+      }
+    }
+  }
+  return Math.min(matched / paraWords.length, 1);
 }
 
 /* ───────────────────────────────────────────
@@ -916,21 +938,18 @@ function _startRec() {
       setTimeout(() => { setChip('active', 'Listening'); setMatch(0); }, 800);
     },
     (heard, committed, interimWords) => {
-      // onHeard
+      // onHeard — drive smooth within-paragraph scroll as words are detected
       if (heard) setHeard(heard, 'live');
-      // Update match bar: score = 1 if we'd advance, else 0 (binary for clarity)
-      const target = lines[currentIdx] || '';
       const allWords = [...committed, ...interimWords];
-      const recentTail = allWords.slice(-10).join(' ');
-      const lineWords = norm(target).split(' ').filter(Boolean);
-      const lastWord = lineWords[lineWords.length - 1] || '';
-      const prefix = lastWord.slice(0, Math.ceil(lastWord.length / 2));
-      const matches = prefix && new RegExp('\\b' + prefix).test(recentTail);
-      setMatch(matches ? 0.9 : Math.min(allWords.length / Math.max(lineWords.length, 1), 0.7));
-      const lw = norm(target).split(' ').filter(Boolean);
+      const para = lines[currentIdx] || '';
+      const progress = matchProgress(para, allWords);
+      // Scroll through the paragraph smoothly at reading pace (180ms easing)
+      scrollToParaProgress(lineEls[currentIdx], progress, 180);
+      setMatch(progress);
+      const lw = norm(para).split(' ').filter(Boolean);
       const last = lw[lw.length-1]||'', sec = lw[lw.length-2]||'';
-      const pfx = last.slice(0, Math.max(Math.ceil(last.length/2), Math.min(4,last.length)));
-      dbg(`recent[7]:"${recentTail}" | 2nd-last:"${sec}" prefix:"${pfx}" advance:${matches}`);
+      const pfx = last.slice(0, Math.max(Math.ceil(last.length/2), Math.min(4, last.length)));
+      dbg(`progress:${(progress*100).toFixed(0)}% | 2nd-last:"${sec}" prefix:"${pfx}"`);
     }
   );
 
@@ -995,7 +1014,7 @@ function applyScript() {
   if (!lines.length) return;
   currentIdx = 0;
   buildDisplay(); closePanels();
-  setHeard(`Script loaded — ${lines.length} cues across ${paraBreaks.size + 1} paragraph(s)`, '');
+  setHeard(`Script loaded — ${lines.length} paragraph(s)`, '');
 }
 
 /* ───────────────────────────────────────────
