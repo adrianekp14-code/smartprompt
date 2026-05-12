@@ -343,6 +343,20 @@ body.fs #fs-hint { display: block; }
   padding: 4px 16px; font-size: 10.5px; color: #ff9992; font-family: monospace;
   z-index: 200; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
+
+/* Paragraph break divider between sentence groups */
+.para-break {
+  width: 100%; max-width: var(--line-width);
+  display: flex; align-items: center; gap: 12px;
+  padding: 8px 0; pointer-events: none;
+}
+.para-break::before, .para-break::after {
+  content: ''; flex: 1; height: 1px; background: rgba(255,255,255,0.08);
+}
+.para-break span {
+  font-size: 9.5px; letter-spacing: .12em; text-transform: uppercase;
+  color: rgba(255,255,255,0.2); white-space: nowrap; font-family: -apple-system, sans-serif;
+}
 </style>
 </head>
 <body>
@@ -494,7 +508,7 @@ body.fs #fs-hint { display: block; }
   <div class="phdr">
     <div>
       <h2>Edit Script</h2>
-      <p>One sentence or phrase per line · blank lines ignored</p>
+      <p>Type paragraphs naturally · leave a blank line between paragraphs · sentences auto-split into cues</p>
     </div>
     <button class="ib" onclick="closePanels()">
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 3l10 10M13 3L3 13"/></svg>
@@ -511,21 +525,15 @@ body.fs #fs-hint { display: block; }
 /* ───────────────────────────────────────────
    SAMPLE SCRIPT
 ─────────────────────────────────────────── */
-const SAMPLE = `Welcome to today's lesson on the solar system.
-We'll be exploring the eight planets and their unique characteristics.
-Let's start with our home planet, Earth — the third rock from the Sun.
-Earth is remarkable for its liquid water, breathable atmosphere, and abundant life.
-Moving closer to the Sun, we encounter Mars — a cold, dusty world with towering volcanoes.
-Olympus Mons on Mars is the tallest volcano in the entire solar system.
-Beyond Mars lies the asteroid belt, a region filled with rocky debris.
-Jupiter is the largest planet — more than twice the mass of all other planets combined.
-Its famous Great Red Spot is a storm that has raged for over three hundred years.
-Saturn's stunning ring system is made of ice and rock particles.
-These rings stretch out nearly three hundred thousand kilometers from the planet's surface.
-Uranus rotates on its side, giving it the most extreme seasons in the solar system.
-Neptune, the farthest planet, has the strongest winds of any world we have discovered.
-Together, these eight planets paint a picture of incredible cosmic diversity.
-Thank you for joining this journey through our solar system.`;
+const SAMPLE = `Welcome to today's lesson on the solar system. We'll be exploring the eight planets and their unique characteristics. Let's start with our home planet, Earth — the third rock from the Sun.
+
+Earth is remarkable for its liquid water, breathable atmosphere, and abundant life. Moving closer to the Sun, we encounter Mars — a cold, dusty world with towering volcanoes. Olympus Mons on Mars is the tallest volcano in the entire solar system.
+
+Beyond Mars lies the asteroid belt, a region filled with rocky debris. Jupiter is the largest planet — more than twice the mass of all other planets combined. Its famous Great Red Spot is a storm that has raged for over three hundred years.
+
+Saturn's stunning ring system is made of ice and rock particles. These rings stretch out nearly three hundred thousand kilometers from the planet's surface. Uranus rotates on its side, giving it the most extreme seasons in the solar system.
+
+Neptune, the farthest planet, has the strongest winds of any world we have discovered. Together, these eight planets paint a picture of incredible cosmic diversity. Thank you for joining this journey through our solar system.`;
 
 /* ───────────────────────────────────────────
    STATE
@@ -696,14 +704,20 @@ const Speech = (() => {
       }
     };
 
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+                  (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
     recog.onend = () => {
       if (!active) return;
       clearTimeout(restartTimer);
-      restartTimer = setTimeout(() => { try { recog.start(); } catch(e){} }, 120);
+      // iOS needs a longer gap before restarting or it silently fails
+      restartTimer = setTimeout(() => { try { recog.start(); } catch(e){} }, isIOS ? 350 : 120);
     };
 
     recog.onerror = ev => {
       if (ev.error === 'no-speech') return;
+      // iOS fires 'aborted' during normal restarts — ignore it
+      if (ev.error === 'aborted') return;
       if (ev.error === 'not-allowed' || ev.error === 'service-not-allowed') {
         active = false; showPermissionError();
       }
@@ -724,12 +738,56 @@ const Speech = (() => {
 })();
 
 /* ───────────────────────────────────────────
+   SCRIPT PARSING
+   Auto-splits paragraphs into individual sentences.
+   Each sentence = one cue the speech tracker targets.
+   Blank lines in the textarea = paragraph breaks.
+─────────────────────────────────────────── */
+let rawScript = '';        // original user text (for edit panel)
+let paraBreaks = new Set(); // indices before which a divider appears
+
+function parseScript(raw) {
+  rawScript = raw;
+  const result = [];
+  paraBreaks = new Set();
+
+  // Split on blank lines to get paragraphs
+  const paragraphs = raw.split(/\n{2,}/).map(p => p.replace(/\n/g, ' ').trim()).filter(Boolean);
+
+  paragraphs.forEach((para, pi) => {
+    // Mark a paragraph break before all except the first
+    if (pi > 0) paraBreaks.add(result.length);
+
+    // Split paragraph into sentences at . ! ? followed by a space + capital letter
+    // or end of string. Keeps abbreviations like "Mr." intact (no space after).
+    const sentences = para
+      .split(/(?<=[.!?])\s+(?=[A-Z"'])|(?<=[.!?])$/)
+      .map(s => s.trim())
+      .filter(Boolean);
+
+    // If no sentence boundary found (e.g. one long run-on), keep as-is
+    sentences.forEach(s => result.push(s));
+  });
+
+  return result;
+}
+
+/* ───────────────────────────────────────────
    DISPLAY
 ─────────────────────────────────────────── */
 function buildDisplay() {
   const wrap = document.getElementById('lines-wrap');
   wrap.innerHTML = ''; lineEls = [];
+
   lines.forEach((text, i) => {
+    // Insert paragraph break divider if needed
+    if (paraBreaks.has(i)) {
+      const div = document.createElement('div');
+      div.className = 'para-break';
+      div.innerHTML = '<span>New Paragraph</span>';
+      wrap.appendChild(div);
+    }
+
     const el = document.createElement('div');
     el.className = 'line';
     el.textContent = text;
@@ -737,6 +795,7 @@ function buildDisplay() {
     wrap.appendChild(el);
     lineEls.push(el);
   });
+
   render(false);
 }
 
@@ -823,11 +882,24 @@ function startListening() {
       channelCount: 1,
     }
   };
+  // Detect iOS — Safari on iPad/iPhone handles mic permission internally
+  // through SpeechRecognition. Calling getUserMedia first causes iOS to block
+  // the second mic request from SpeechRecognition (the real one we need).
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+                (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+  if (isIOS) {
+    // On iOS: skip getUserMedia entirely, let SpeechRecognition handle its own permission
+    _startRec();
+    return;
+  }
+
+  // Non-iOS: use getUserMedia for the mic level visualiser
   if (navigator.mediaDevices?.getUserMedia) {
     navigator.mediaDevices.getUserMedia(constraints)
       .then(stream => {
         micStream = stream;
-        startMicLevel(stream); // visual level meter
+        startMicLevel(stream);
         _startRec();
       })
       .catch(() => showPermissionError());
@@ -913,17 +985,19 @@ function closePanels() {
   document.querySelectorAll('.panel').forEach(p => p.classList.remove('open'));
 }
 function openEdit() {
-  document.getElementById('edit-ta').value = lines.join('\n');
+  // Show the original un-split text so the user edits paragraphs, not sentences
+  document.getElementById('edit-ta').value = rawScript;
   openPanel('edit-panel');
 }
 
 function applyScript() {
-  const parsed = document.getElementById('edit-ta').value
-    .split('\n').map(l => l.trim()).filter(Boolean);
-  if (!parsed.length) return;
-  lines = parsed; currentIdx = 0;
+  const raw = document.getElementById('edit-ta').value.trim();
+  if (!raw) return;
+  lines = parseScript(raw);
+  if (!lines.length) return;
+  currentIdx = 0;
   buildDisplay(); closePanels();
-  setHeard(`Script loaded — ${lines.length} lines`, '');
+  setHeard(`Script loaded — ${lines.length} cues across ${paraBreaks.size + 1} paragraph(s)`, '');
 }
 
 /* ───────────────────────────────────────────
@@ -1042,7 +1116,7 @@ document.addEventListener('keydown', e => {
 /* ───────────────────────────────────────────
    INIT
 ─────────────────────────────────────────── */
-lines = SAMPLE.split('\n').map(l => l.trim()).filter(Boolean);
+lines = parseScript(SAMPLE);
 buildDisplay();
 setMode('manual');
 initSettings();
