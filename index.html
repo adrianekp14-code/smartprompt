@@ -582,20 +582,23 @@ function norm(t) {
   return t.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
-// Advance when we're confident the speaker is on the final word of the paragraph.
-// Two-anchor strategy:
-//   1. matchProgress >= 75% (must be well into the paragraph first)
-//   2. Second-to-last word must appear in the recent 9-word window
-//   3. Last word prefix must appear AFTER it in the same window
+// Advance when we're confident the speaker has finished the paragraph.
+// Guards:
+//   1. At least one isFinal committed word (not just interim guesses)
+//   2. matchProgress >= 85% through the paragraph
+//   3. Minimum time scaled by paragraph length (short paras get more time)
+//   4. Second-to-last word in recent window, then last-word prefix after it
 function shouldAdvance(line, committedWords, interimWords) {
   const lineWords = norm(line).split(' ').filter(Boolean);
   if (!lineWords.length) return false;
 
-  const allWords = [...committedWords, ...interimWords];
-  if (allWords.length < 2) return false;
+  // Must have at least one real committed (isFinal) word — no advancing on interim alone
+  if (committedWords.length < 1) return false;
 
-  // Progress gate — must be at least 75% through the paragraph before we even check
-  if (matchProgress(line, allWords) < 0.75) return false;
+  const allWords = [...committedWords, ...interimWords];
+
+  // Progress gate: 85% through the paragraph
+  if (matchProgress(line, allWords) < 0.85) return false;
 
   const lastWord   = lineWords[lineWords.length - 1];
   const secondLast = lineWords.length >= 2 ? lineWords[lineWords.length - 2] : '';
@@ -604,7 +607,6 @@ function shouldAdvance(line, committedWords, interimWords) {
   const prefix    = lastWord.slice(0, prefixLen);
 
   const recentWords = allWords.slice(-9);
-  const recentTail  = recentWords.join(' ');
 
   if (secondLast && secondLast.length > 2) {
     const secondLastIdx = recentWords.lastIndexOf(secondLast);
@@ -613,7 +615,7 @@ function shouldAdvance(line, committedWords, interimWords) {
     return new RegExp('\\b' + prefix).test(afterSecondLast);
   }
 
-  return new RegExp('\\b' + prefix).test(recentTail);
+  return new RegExp('\\b' + prefix).test(recentWords.join(' '));
 }
 
 /* ───────────────────────────────────────────
@@ -690,7 +692,11 @@ const Speech = (() => {
 
       const now = Date.now();
       if (now - lastAdvance < COOLDOWN) return;
-      if (now - lineStart  < MIN_LINE_MS) return;
+
+      // Scale minimum time by paragraph length: ~250ms per word, min 1.2s, max 4s
+      const paraWordCount = norm(lines[currentIdx] || '').split(' ').filter(Boolean).length;
+      const minTime = Math.min(Math.max(paraWordCount * 250, 1200), 4000);
+      if (now - lineStart < minTime) return;
 
       const target = lines[currentIdx] || '';
       if (target && shouldAdvance(target, committed, interimWords)) {
