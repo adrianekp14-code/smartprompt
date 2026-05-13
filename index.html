@@ -104,7 +104,13 @@ html, body {
 .ib svg { width: 15px; height: 15px; pointer-events: none; }
 
 /* Mirror mode — only flips the script stage, bars stay readable */
-#stage.mirrored { transform: scaleX(-1); }
+#stage.mirrored {
+  transform: scaleX(-1);
+  transform-origin: center center;
+}
+#stage.mirrored #scroller {
+  transform: none;
+}
 
 /* ─── STAGE ─── */
 #stage {
