@@ -103,14 +103,11 @@ html, body {
 .ib.on:hover { background: rgba(232,53,47,0.2); color: #ff9a96; }
 .ib svg { width: 15px; height: 15px; pointer-events: none; }
 
-/* Mirror mode — only flips the script stage, bars stay readable */
-#stage.mirrored {
-  transform: scale(-1, -1);
-  transform-origin: center center;
-}
-#stage.mirrored #scroller {
-  transform: none;
-}
+
+/* Flip modes — independent H and V, combinable */
+#stage.flip-h  { transform: scaleX(-1); }
+#stage.flip-v  { transform: scaleY(-1); }
+#stage.flip-h.flip-v { transform: scale(-1, -1); }
 
 /* ─── STAGE ─── */
 #stage {
@@ -399,9 +396,14 @@ body.fs #fs-hint { display: block; }
   <button class="ib" onclick="jumpTo(0)" title="Reset to start">
     <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 8a5 5 0 105-5H5"/><path d="M3 4v4h4"/></svg>
   </button>
-  <button class="ib" id="btn-mirror" onclick="toggleMirror()" title="Mirror text (for glass teleprompter)">
+  <button class="ib" id="btn-fliph" onclick="toggleFlipH()" title="Flip horizontal (mirror left-right)">
     <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
       <path d="M8 2v12M2 5l3 3-3 3M14 5l-3 3 3 3"/>
+    </svg>
+  </button>
+  <button class="ib" id="btn-flipv" onclick="toggleFlipV()" title="Flip vertical (mirror top-bottom)">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M2 8h12M5 2l3 3 3-3M5 14l3-3 3 3"/>
     </svg>
   </button>
   <button class="ib" onclick="openPanel('settings-panel')" title="Display settings">
@@ -1110,12 +1112,24 @@ document.addEventListener('fullscreenchange', () => {
 });
 
 
-let mirrored = false;
-function toggleMirror() {
-  mirrored = !mirrored;
-  document.getElementById('stage').classList.toggle('mirrored', mirrored);
-  document.getElementById('btn-mirror').classList.toggle('on', mirrored);
-  document.getElementById('btn-mirror').title = mirrored ? 'Mirror ON — click to disable' : 'Mirror text (for glass teleprompter)';
+let flipH = false, flipV = false;
+
+function applyFlip() {
+  const stage = document.getElementById('stage');
+  stage.classList.toggle('flip-h', flipH);
+  stage.classList.toggle('flip-v', flipV);
+}
+
+function toggleFlipH() {
+  flipH = !flipH;
+  applyFlip();
+  document.getElementById('btn-fliph').classList.toggle('on', flipH);
+}
+
+function toggleFlipV() {
+  flipV = !flipV;
+  applyFlip();
+  document.getElementById('btn-flipv').classList.toggle('on', flipV);
 }
 
 /* ───────────────────────────────────────────
