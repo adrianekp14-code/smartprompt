@@ -13,7 +13,7 @@ print(f"{sub['name']} | CIK {cik} | SIC {sub.get('sic')} {sub.get('sicDescriptio
 G = cf["facts"].get("us-gaap", {})
 CONCEPTS = [("Revenue", ["SalesRevenueNet", "Revenues", "RevenueFromContractWithCustomerIncludingAssessedTax", "RevenueFromContractWithCustomerExcludingAssessedTax"]),
  ("GrossProfit", ["GrossProfit"]), ("OpIncome", ["OperatingIncomeLoss"]), ("NetIncome", ["NetIncomeLoss"]),
- ("CFO", ["NetCashProvidedByUsedInOperatingActivities"]), ("Capex", ["PaymentsToAcquirePropertyPlantAndEquipment"]),
+ ("CFO", ["NetCashProvidedByUsedInOperatingActivities"]), ("Capex", ["PaymentsToAcquirePropertyPlantAndEquipment", "PaymentsToAcquireProductiveAssets"]),
  ("SBC", ["ShareBasedCompensation", "AllocatedShareBasedCompensationExpense"]), ("R&D", ["ResearchAndDevelopmentExpense"]),
  ("DilShares", ["WeightedAverageNumberOfDilutedSharesOutstanding"]), ("EPSdil", ["EarningsPerShareDiluted"]),
  ("Buyback", ["PaymentsForRepurchaseOfCommonStock"]), ("Dividends", ["PaymentsOfDividends", "PaymentsOfDividendsCommonStock"]),
@@ -55,6 +55,35 @@ for lab, names in [("Cash", ["CashAndCashEquivalentsAtCarryingValue"]), ("ST inv
                    ("LT debt", ["LongTermDebtNoncurrent", "LongTermDebt"]), ("Equity", ["StockholdersEquity"]), ("Goodwill", ["Goodwill"]),
                    ("Contract liab", ["ContractWithCustomerLiabilityCurrent"]), ("RPO", ["RevenueRemainingPerformanceObligation"])]:
     e, v = inst(names); print(f"  {lab:14} {e}  {v/1e6 if v else v}")
+
+# ---- TTM cash flow from YTD 10-Q figures: TTM = last FY + current YTD - prior-year YTD (cash-flow statements are reported YTD) ----
+def ytd(names):
+    out = {}
+    for n in names:
+        for u, facts in G.get(n, {}).get("units", {}).items():
+            for f in facts:
+                if "start" in f and f.get("form", "").startswith(("10-Q", "10-K", "20-F", "6-K")):
+                    out[(f["start"], f["end"])] = f["val"]
+    return out
+def ttm(names):
+    y = ytd(names)
+    if not y: return None
+    fy = {k: v for k, v in y.items() if 340 < (time.mktime(time.strptime(k[1], "%Y-%m-%d")) - time.mktime(time.strptime(k[0], "%Y-%m-%d"))) / 86400 < 390}
+    if not fy: return None
+    fyk = max(fy, key=lambda k: k[1]); fy_end = fyk[1]
+    cur = [k for k in y if k[0] > fy_end and k[1] > fy_end]
+    if not cur: return dict(ttm=fy[fyk], basis=f"FY ending {fy_end}")
+    ck = max(cur, key=lambda k: k[1]); span = time.mktime(time.strptime(ck[1], "%Y-%m-%d")) - time.mktime(time.strptime(ck[0], "%Y-%m-%d"))
+    prior = [k for k in y if k[0] <= fyk[0] + "~" and abs((time.mktime(time.strptime(k[1], "%Y-%m-%d")) - time.mktime(time.strptime(k[0], "%Y-%m-%d"))) - span) < 15 * 86400 and k[0] >= fyk[0] and k[1] < fy_end]
+    if not prior: return dict(ttm=None, basis="prior-year YTD not found")
+    pk = max(prior, key=lambda k: k[1])
+    return dict(ttm=fy[fyk] + y[ck] - y[pk], basis=f"FY{fy_end} + YTD to {ck[1]} - YTD to {pk[1]}")
+cfo_t = ttm(["NetCashProvidedByUsedInOperatingActivities"]); cap_t = ttm(["PaymentsToAcquirePropertyPlantAndEquipment", "PaymentsToAcquireProductiveAssets"])
+sbc_t = ttm(["ShareBasedCompensation", "AllocatedShareBasedCompensationExpense"])
+if cfo_t and cfo_t.get("ttm") is not None:
+    fcf = cfo_t["ttm"] - ((cap_t or {}).get("ttm") or 0)
+    print(f"-- TTM cash flow: CFO {cfo_t['ttm']/1e6:.1f} capex {((cap_t or {}).get('ttm') or 0)/1e6:.1f} FCF {fcf/1e6:.1f} SBC {((sbc_t or {}).get('ttm') or 0)/1e6:.1f} ($M) [{cfo_t['basis']}]")
+
 dei = cf["facts"].get("dei", {}).get("EntityCommonStockSharesOutstanding", {}).get("units", {}).get("shares", [])
 if dei: f = max(dei, key=lambda f: f["end"]); print(f"  Shares out (dei) as of {f['end']}: {f['val']/1e6:.2f}M (filed {f['filed']})")
 r = sub["filings"]["recent"]

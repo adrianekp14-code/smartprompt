@@ -82,6 +82,28 @@ after stock comp.
 
 **Invalidation:** 2027 growth below ~15%; gross margin below 40%; FCF margin below 7% through 2027; loss of a top-3 customer.
 
+**Claims table** (per `research/RESEARCH_STANDARDS.md`; verified by me on 2026-11-08)
+| # | Claim | Type | Source |
+|---|---|---|---|
+| 1 | Q3-26 revenue $696.4M (+50% y/y): Semi Equipment $322.2M, Data Center $256.2M, Industrial & Medical $90.5M, Telecom $27.5M | FACT | 10-Q segment note — https://www.sec.gov/Archives/edgar/data/927003/000092700326000039/aeis-20260930x10q.htm |
+| 2 | Q3-26 GAAP operating income $143.2M; GAAP gross margin 41.5% | FACT | XBRL; 8-K Ex. 99.1 — https://www.sec.gov/Archives/edgar/data/927003/000092700326000037/aeis-ex99d1.htm |
+| 3 | Q4-26 guide: revenue $735M ± $25M; GAAP EPS $3.30; non-GAAP EPS $3.90 | FACT | 8-K Ex. 99.1 |
+| 4 | TTM FCF $69.9M (CFO $224.6M − capex $154.7M); TTM SBC $72.6M | FACT | XBRL computation (FY25 + 9M-26 − 9M-25) |
+| 5 | Three customers were 23%, 19% and 12% of 2025 revenue; names not disclosed | FACT (names MISSING) | FY25 10-K — https://www.sec.gov/Archives/edgar/data/927003/000110465926014731/aeis-20251231x10k.htm |
+| 6 | $1.15B 0% convertible notes due 2031, issued 2026-05-18 | FACT | 10-Q Note 6 |
+| 7 | 2031 conversion price $508.78; capped call to $678.38; max 3.39M shares on conversion; $136.4M 2028 notes settled 2026-10-02 in cash plus 0.5M shares; 9M-26 inventory +$234M | FACT | 10-Q Note 6, subsequent events and cash-flow statement |
+| 8 | Repurchased $30M of stock at $240.77 in October 2026 | FACT | 8-K Ex. 99.1 |
+| 9 | Cash $1,424.6M at 2026-09-30; 40.48M shares (2026-10-28) | FACT | XBRL / 10-Q cover |
+| 10 | 2030 Investor Day targets: $3B revenue, 43% GM, $15 EPS | REPORTED | quartr summary; primary deck not retrieved |
+| 11 | Capacity of more than $5B of revenue by 2028; Wells Fargo 2028 EPS of $22.49 | REPORTED | Search summaries only |
+| 12 | Bear/base/bull revenue, margins, multiples | ASSUMPTION | My scenarios above |
+| 13 | Customer identities; top data-center customer share; long-term supply agreements | MISSING | Not disclosed |
+
+**Status under the standards:** research candidate. **Not notifiable.**
+- Claims 10 and 11 still need primary verification (they are not load-bearing).
+- The disproof review returned "survives with major caveats". The FCF conversion caveat is unresolved and cannot be resolved before the
+  Q4-26 10-K (Feb 2027).
+
 **Next checkpoint:** Q4-26 results (Feb 2027). Watch FCF and inventory.
 
 ---
