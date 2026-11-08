@@ -1,0 +1,592 @@
+{
+ "POWL": {
+  "status": "shortlist-deep",
+  "reason": "Custom switchgear/E-houses; FY22-25 rev 533->1104M, op margin 1%->20%; net cash $634M; backlog $2.4B; 9M FY26 bookings $1.9B (book-to-bill ~2.2); ~18.5x EV/TTM EBIT after -59% drawdown"
+ },
+ "IESC": {
+  "status": "shortlist-deep",
+  "reason": "Electrical contractor + custom power (data centers); FY22-25 rev 2.17->3.37B, op inc 56->384M; Jun-26 qtr rev +40%; ~12.6x EV/TTM EBIT post 2:1 split (Aug-24-2026); -60% from high"
+ },
+ "BKTI": {
+  "status": "shortlist-deep",
+  "reason": "LMR radios (BKR 9000 multiband) for federal/state first responders; turnaround op inc -11M (2022) -> +16M (2025); net cash; ~14x EV/EBIT; small backlog, lumpy"
+ },
+ "MPTI": {
+  "status": "shortlist-deep",
+  "reason": "RF/microwave & frequency-control components for A&D; rev 27->54M 2021-25; backlog $84M (+37% y/y); net cash $96M after ~50% dilution via 2026 rights offering/warrants; ~15x EV/EBIT"
+ },
+ "PSIX": {
+  "status": "shortlist-deep",
+  "reason": "Gas/diesel engines & gensets incl. data center; ~5x EV/annualized Q3 EBIT BUT 9M-26 sales -9% y/y, Weichai 46% control, securities class action, prior accounting fraud history"
+ },
+ "AGX": {
+  "status": "shortlist",
+  "reason": "Gas-fired power plant EPC; net cash ~$0.5B; Jul-26 qtr rev +62% y/y; ~18x EV/TTM EBIT after -65% drawdown; project lumpiness, few large contracts"
+ },
+ "LMB": {
+  "status": "shortlist",
+  "reason": "Mechanical/electrical owner-direct services (hospitals, data centers); Q3-26 rev 230M vs 139M Q1; mix shift to ODR; ~12x EV/EBIT; low gross margin business"
+ },
+ "PPIH": {
+  "status": "shortlist",
+  "reason": "Pre-insulated piping (district energy, oil & gas, data center cooling); ~8x EV/EBIT; FCF weak (working capital); Middle East exposure"
+ },
+ "AZZ": {
+  "status": "shortlist",
+  "reason": "Hot-dip galvanizing + coil coating; FCF yield ~12% (incl. JV distributions); leverage being paid down; modest growth"
+ },
+ "CAMT": {
+  "status": "shortlist",
+  "reason": "Inspection/metrology for advanced packaging & HBM; 5y rev CAGR ~30%; screen omitted convertible debt - must verify; EV/EBIT ~33x; Israel-based"
+ },
+ "PLAB": {
+  "status": "shortlist",
+  "reason": "Photomasks; ~$550M cash, EV/EBIT ~5x; but flat revenue 2023-26, China/Taiwan JV exposure, minority interests inflate EBIT"
+ },
+ "ESP": {
+  "status": "shortlist",
+  "reason": "Military power supplies/transformers; $140M cap, net cash, rev +40% latest qtr; very illiquid micro-cap; backlog-driven"
+ },
+ "RDCM": {
+  "status": "shortlist",
+  "reason": "5G network assurance software; ~2/3 of market cap in cash; profitable; customer concentration (Rakuten/AT&T)"
+ },
+ "LMAT": {
+  "status": "shortlist",
+  "reason": "Niche vascular devices; consistent 10-15% growth, 27% op margin; high quality but ~27x EV/EBIT"
+ },
+ "ELMD": {
+  "status": "shortlist",
+  "reason": "Airway clearance (SmartVest); 15%+ growth, net cash; ~21x EV/EBIT; reimbursement risk"
+ },
+ "UFPT": {
+  "status": "shortlist",
+  "reason": "Medical device components (foam/films) contract mfr; acquisitive compounder; ~26x EV/EBIT; customer concentration (Intuitive?)"
+ },
+ "USLM": {
+  "status": "shortlist",
+  "reason": "Lime/limestone quasi-monopoly regional quarries; 42% op margin, $439M cash; ~17x EV/EBIT; slow-growth but exceptional quality"
+ },
+ "TGLS": {
+  "status": "shortlist",
+  "reason": "Architectural glass/windows (Colombia mfg, US sales); ~9x EV/EBIT; tariff risk; margins falling in 2026"
+ },
+ "OSPN": {
+  "status": "shortlist",
+  "reason": "Digital identity/authentication software; transitioned to profitability; ~15x EV/EBIT; flat revenue"
+ },
+ "NSSC": {
+  "status": "shortlist",
+  "reason": "Security hardware + recurring StarLink radio services; net cash; ~20x EV/EBIT; revenue flat, prior restatement 2023"
+ },
+ "CRMD": {
+  "status": "rejected",
+  "reason": "Single-product (DefenCath) launch spike; sustainability unproven; share data artifact",
+  "revisit": "Two more quarters of stable recurring sales"
+ },
+ "CGEN": {
+  "status": "rejected",
+  "reason": "Revenue = milestone/licensing; not recurring"
+ },
+ "TCOM": {
+  "status": "rejected",
+  "reason": "Large-cap China travel; VIE/geopolitical risk; outside mandate"
+ },
+ "NVDA": {
+  "status": "rejected",
+  "reason": "Mega-cap; universally followed"
+ },
+ "PHXE-P": {
+  "status": "rejected",
+  "reason": "Preferred/LLC security; oil & gas"
+ },
+ "KROS": {
+  "status": "rejected",
+  "reason": "One-off license revenue; negative EV"
+ },
+ "SEZL": {
+  "status": "rejected",
+  "reason": "Consumer BNPL lender; credit risk; share data artifact; outside niche-industrial focus"
+ },
+ "TMDX": {
+  "status": "watch",
+  "reason": "Organ transport (OCS + aviation); 86% 3y CAGR; ~29x EV/EBIT; dilution from converts; logistics-heavy model",
+  "revisit": "Q4-26 results & 2027 guide"
+ },
+ "NUTX": {
+  "status": "rejected",
+  "reason": "Micro-hospitals; arbitration (IDR) revenue volatility; governance/ dilution"
+ },
+ "DCTH": {
+  "status": "rejected",
+  "reason": "Heavy dilution (warrants); EBIT near zero"
+ },
+ "GMED": {
+  "status": "rejected",
+  "reason": "Merger-inflated growth (NuVasive); mid-cap well-followed; q/q revenue flat"
+ },
+ "NICE": {
+  "status": "rejected",
+  "reason": "Mature contact-center software; AI disruption risk to seat-based model; revisit on valuation",
+  "revisit": "Evidence AI revenue offsets seat erosion"
+ },
+ "PODD": {
+  "status": "rejected",
+  "reason": "Well-followed med-tech; competitive (Tandem/Medtronic/Embecta) after -54% drawdown cause unclear",
+  "revisit": "Clarity on drawdown cause"
+ },
+ "RMBS": {
+  "status": "watch",
+  "reason": "Memory interface chips + IP; high quality; ~30x EV/EBIT",
+  "revisit": "Price below ~22x EBIT"
+ },
+ "INOD": {
+  "status": "rejected",
+  "reason": "AI data-labeling services; concentration in one Big Tech customer; share data artifact"
+ },
+ "PCTY": {
+  "status": "rejected",
+  "reason": "Payroll SaaS; well-followed; growth slowing"
+ },
+ "IMMR": {
+  "status": "rejected",
+  "reason": "Revenue consolidated from Barnes & Noble Education acquisition; not core growth"
+ },
+ "PAYS": {
+  "status": "rejected",
+  "reason": "Prepaid card processor; EV/EBIT >100x"
+ },
+ "IMAX": {
+  "status": "rejected",
+  "reason": "Entertainment; box-office driven"
+ },
+ "XZO": {
+  "status": "rejected",
+  "reason": "Insurance software spun from HCI; captive related-party revenue"
+ },
+ "VCYT": {
+  "status": "watch",
+  "reason": "Genomic diagnostics; ~29x EV/EBIT; reimbursement risk",
+  "revisit": "Margin expansion"
+ },
+ "DV": {
+  "status": "rejected",
+  "reason": "Ad-verification; competitive pressure, slowing growth"
+ },
+ "OPRX": {
+  "status": "rejected",
+  "reason": "Revenue fell 30% latest qtr; pharma ad-spend dependent"
+ },
+ "UNIT": {
+  "status": "rejected",
+  "reason": "Highly levered fiber REIT/merger (Windstream); net debt ~$10B"
+ },
+ "TUYA": {
+  "status": "rejected",
+  "reason": "China IoT platform; geopolitical/VIE risk; low margins"
+ },
+ "SPSC": {
+  "status": "rejected",
+  "reason": "Supply-chain EDI SaaS; growth decelerated to ~4%"
+ },
+ "PCYO": {
+  "status": "watch",
+  "reason": "Water/land in Denver area; lumpy land sales",
+  "revisit": "Recurring water revenue growth"
+ },
+ "DSGX": {
+  "status": "rejected",
+  "reason": "Quality logistics SaaS; ~37x EV/EBIT"
+ },
+ "GLBE": {
+  "status": "rejected",
+  "reason": "Cross-border e-commerce; EV/EBIT ~97x"
+ },
+ "IA": {
+  "status": "watch",
+  "reason": "Avionics (IS&S) after Honeywell product-line acquisition; small cap; integration",
+  "revisit": "Organic growth disclosure"
+ },
+ "INVX": {
+  "status": "rejected",
+  "reason": "Oilfield equipment; merger-driven growth; commodity cycle"
+ },
+ "MVST": {
+  "status": "rejected",
+  "reason": "Battery maker; going-concern history; China ops"
+ },
+ "IRMD": {
+  "status": "watch",
+  "reason": "MRI-compatible IV pumps; monopoly-like niche; ~40x EV/EBIT",
+  "revisit": "Price below ~28x EBIT"
+ },
+ "SPXC": {
+  "status": "rejected",
+  "reason": "HVAC/detection conglomerate; -36% 1y; fairly valued; well-followed"
+ },
+ "MDXG": {
+  "status": "rejected",
+  "reason": "Skin substitutes; Medicare LCD reimbursement change caused -45% revenue"
+ },
+ "QLYS": {
+  "status": "rejected",
+  "reason": "Security SaaS; slow growth ~10%; ~29x EBIT"
+ },
+ "RELY": {
+  "status": "rejected",
+  "reason": "Remittances; dilution; low margins"
+ },
+ "NXT": {
+  "status": "rejected",
+  "reason": "Solar trackers (formerly Nextracker); policy-dependent; mid-cap well-followed"
+ },
+ "GEN": {
+  "status": "rejected",
+  "reason": "Consumer security; $8B net debt; low growth"
+ },
+ "MLI": {
+  "status": "rejected",
+  "reason": "Copper-price-driven earnings"
+ },
+ "PAYC": {
+  "status": "rejected",
+  "reason": "Payroll SaaS; well-followed"
+ },
+ "DOCN": {
+  "status": "rejected",
+  "reason": "Cloud; ~53x EV/EBIT"
+ },
+ "HUBS": {
+  "status": "rejected",
+  "reason": "Op margin ~0; AI disruption debate"
+ },
+ "HQY": {
+  "status": "rejected",
+  "reason": "HSA custodian; rate-sensitive; net debt"
+ },
+ "CXDO": {
+  "status": "rejected",
+  "reason": "Small UCaaS; dilution 38%"
+ },
+ "INSP": {
+  "status": "rejected",
+  "reason": "GLP-1 headwinds; revenue declining"
+ },
+ "PAYO": {
+  "status": "rejected",
+  "reason": "Interest-income-driven; low growth"
+ },
+ "MEDP": {
+  "status": "rejected",
+  "reason": "CRO; well-followed; biotech funding cycle"
+ },
+ "DT": {
+  "status": "rejected",
+  "reason": "Observability SaaS; ~42x EV/EBIT"
+ },
+ "CWCO": {
+  "status": "watch",
+  "reason": "Water desalination/utility; Hawaii desal project; modest growth",
+  "revisit": "New design-build contracts"
+ },
+ "CAI": {
+  "status": "rejected",
+  "reason": "Recent IPO; EV/EBIT ~149x"
+ },
+ "HLIT": {
+  "status": "rejected",
+  "reason": "Cable broadband equipment; 3y revenue decline"
+ },
+ "KMT": {
+  "status": "rejected",
+  "reason": "Cyclical tooling; flat revenue"
+ },
+ "EXLS": {
+  "status": "rejected",
+  "reason": "IT/BPO services; AI disruption risk"
+ },
+ "WIX": {
+  "status": "rejected",
+  "reason": "Op margin ~0; AI site-builder competition"
+ },
+ "AMSC": {
+  "status": "watch",
+  "reason": "Grid/semiconductor-fab power systems; 41% CAGR but thin margins, ~85x EBIT",
+  "revisit": "Op margin >10%"
+ },
+ "GRND": {
+  "status": "rejected",
+  "reason": "Consumer app; governance (take-private attempts); leverage"
+ },
+ "ONTO": {
+  "status": "rejected",
+  "reason": "Semicap metrology; ~55x EV/EBIT"
+ },
+ "TCMD": {
+  "status": "rejected",
+  "reason": "Lymphedema devices; reimbursement; 16% dilution"
+ },
+ "FSS": {
+  "status": "rejected",
+  "reason": "Specialty vehicles; fairly valued, well-followed"
+ },
+ "LIVN": {
+  "status": "rejected",
+  "reason": "Med-tech turnaround; +78% 1y; fairly valued"
+ },
+ "LQDT": {
+  "status": "rejected",
+  "reason": "Online surplus auctions; ~39x EV/EBIT"
+ },
+ "WLDN": {
+  "status": "watch",
+  "reason": "Energy-efficiency engineering / grid consulting; 17% CAGR; thin margins; -51% from high",
+  "revisit": "FY26 results"
+ },
+ "PDEX": {
+  "status": "rejected",
+  "reason": "Single large customer (Medtronic); negative FCF"
+ },
+ "PKE": {
+  "status": "watch",
+  "reason": "Aerospace composite materials; tiny; ~30x EBIT; GE Aerospace concentration",
+  "revisit": "Capacity expansion payoff"
+ },
+ "LOAR": {
+  "status": "rejected",
+  "reason": "Aerospace components roll-up; ~74x EV/EBIT; PE-owned overhang"
+ },
+ "KRMN": {
+  "status": "rejected",
+  "reason": "Missile/space structures; ~94x EV/EBIT; negative FCF"
+ },
+ "BMI": {
+  "status": "watch",
+  "reason": "Smart water meters; quality; flat latest qtr; ~25x EV/EBIT",
+  "revisit": "Growth re-acceleration or price <20x"
+ },
+ "DGII": {
+  "status": "watch",
+  "reason": "IoT hardware+ARR; acquisitions; ~44x EV/EBIT on GAAP",
+  "revisit": "ARR mix"
+ },
+ "AAON": {
+  "status": "watch",
+  "reason": "HVAC incl. data-center liquid cooling (BasX); revenue +100% y/y but FCF ~0 and margins fell; -61% from high",
+  "revisit": "FCF recovery"
+ },
+ "STRL": {
+  "status": "watch",
+  "reason": "Data-center site development; -75% from high; Q3-26 book-to-bill <1 per press",
+  "revisit": "Backlog stabilization"
+ },
+ "VRT": {
+  "status": "rejected",
+  "reason": "Large-cap ($70B); well-followed"
+ },
+ "FN": {
+  "status": "rejected",
+  "reason": "Optical contract mfr; FCF ~0; NVIDIA concentration; $11.7B"
+ },
+ "EME": {
+  "status": "rejected",
+  "reason": "Large-cap contractor; well-followed"
+ },
+ "FIX": {
+  "status": "rejected",
+  "reason": "Large-cap; ~160x EV/EBIT (screen artifact from FY data) - not niche"
+ },
+ "NVEC": {
+  "status": "watch",
+  "reason": "Spintronic sensors/couplers; 60% op margin; revenue shrinking -12% CAGR",
+  "revisit": "Return to growth"
+ },
+ "ACLS": {
+  "status": "rejected",
+  "reason": "Ion implant; SiC/China demand down; flat revenue"
+ },
+ "ERII": {
+  "status": "rejected",
+  "reason": "Desal pressure exchangers; revenue -65% latest qtr (lumpy mega projects)"
+ },
+ "CGNX": {
+  "status": "rejected",
+  "reason": "Machine vision; flat revenue 3y; ~45x EBIT"
+ },
+ "OII": {
+  "status": "rejected",
+  "reason": "Offshore oil services; cyclical"
+ },
+ "MOD": {
+  "status": "watch",
+  "reason": "Data-center cooling transition; -38% 1y; FCF thin",
+  "revisit": "FCF"
+ },
+ "SANM": {
+  "status": "rejected",
+  "reason": "EMS; 4% op margin"
+ },
+ "PRIM": {
+  "status": "rejected",
+  "reason": "Low-margin E&C; -48% 1y"
+ },
+ "ESE": {
+  "status": "rejected",
+  "reason": "~35x EV/EBIT; moderate growth"
+ },
+ "ZWS": {
+  "status": "rejected",
+  "reason": "Water products; fairly valued"
+ },
+ "HURC": {
+  "status": "rejected",
+  "reason": "Declining machine-tool sales; losses"
+ },
+ "CRS": {
+  "status": "rejected",
+  "reason": "Specialty alloys; $13.8B; well-followed"
+ },
+ "NWPX": {
+  "status": "watch",
+  "reason": "Water pipe/precast; infrastructure; modest growth",
+  "revisit": "Margin expansion"
+ },
+ "GRC": {
+  "status": "rejected",
+  "reason": "Pumps; slow growth; fairly valued"
+ },
+ "MYRG": {
+  "status": "rejected",
+  "reason": "T&D contractor; thin margins"
+ },
+ "DY": {
+  "status": "rejected",
+  "reason": "Telecom contractor; low margin"
+ },
+ "ENS": {
+  "status": "rejected",
+  "reason": "Batteries; flat revenue"
+ },
+ "GVA": {
+  "status": "rejected",
+  "reason": "Heavy civil; low margin"
+ },
+ "HWM": {
+  "status": "rejected",
+  "reason": "Large-cap; ~42x EBIT"
+ },
+ "INTT": {
+  "status": "rejected",
+  "reason": "Losses; small"
+ },
+ "KE": {
+  "status": "rejected",
+  "reason": "EMS; 3% op margin"
+ },
+ "ASYS": {
+  "status": "rejected",
+  "reason": "Losses"
+ },
+ "ATI": {
+  "status": "rejected",
+  "reason": "Large; ~37x EBIT"
+ },
+ "TRMB": {
+  "status": "rejected",
+  "reason": "Flat revenue"
+ },
+ "MLAB": {
+  "status": "rejected",
+  "reason": "~41x EBIT; low growth"
+ },
+ "NOVT": {
+  "status": "rejected",
+  "reason": "~49x EBIT; low growth"
+ },
+ "TDY": {
+  "status": "rejected",
+  "reason": "Large-cap"
+ },
+ "PLPC": {
+  "status": "rejected",
+  "reason": "Low growth; ~24x EBIT"
+ },
+ "ALNT": {
+  "status": "rejected",
+  "reason": "~35x EBIT; low growth"
+ },
+ "GHM": {
+  "status": "watch",
+  "reason": "Vacuum/heat-transfer for defense (Navy) & energy; ~56x EBIT",
+  "revisit": "Margin expansion"
+ },
+ "LYTS": {
+  "status": "rejected",
+  "reason": "Low margin"
+ },
+ "IPGP": {
+  "status": "rejected",
+  "reason": "Revenue declining; Chinese competition"
+ },
+ "KTOS": {
+  "status": "rejected",
+  "reason": "~200x EBIT; dilution"
+ },
+ "NATL": {
+  "status": "rejected",
+  "reason": "ATMs; low growth"
+ },
+ "BWXT": {
+  "status": "watch",
+  "reason": "Naval nuclear + medical isotopes monopoly; -38% 1y; ~31x EBIT",
+  "revisit": "Price <22x EBIT"
+ },
+ "ICHR": {
+  "status": "rejected",
+  "reason": "Losses; low margin"
+ },
+ "WWD": {
+  "status": "rejected",
+  "reason": "Large-cap"
+ },
+ "SXI": {
+  "status": "rejected",
+  "reason": "~34x EBIT; slow growth"
+ },
+ "TTMI": {
+  "status": "rejected",
+  "reason": "FCF ~0; capex heavy"
+ },
+ "LASR": {
+  "status": "rejected",
+  "reason": "Losses"
+ },
+ "ULBI": {
+  "status": "rejected",
+  "reason": "Losses"
+ },
+ "UCTT": {
+  "status": "rejected",
+  "reason": "Losses; low margin"
+ },
+ "AXON": {
+  "status": "rejected",
+  "reason": "Large-cap"
+ },
+ "COHR": {
+  "status": "rejected",
+  "reason": "Large-cap; dilution"
+ },
+ "DCO": {
+  "status": "rejected",
+  "reason": "Losses (charges)"
+ },
+ "TPC": {
+  "status": "rejected",
+  "reason": "Low-margin general contractor"
+ },
+ "NOG": {
+  "status": "rejected",
+  "reason": "Oil & gas"
+ }
+}

@@ -1,0 +1,21 @@
+ticker,name,exchange,status,price_2026_11_06,market_cap_musd,thesis_summary,key_risk,next_catalyst,next_catalyst_date,last_checked,last_event
+IESC,IES Holdings,Nasdaq,deep-research (notification held),158.45,6380,"Data-center electrical/custom-power contractor; EPS compounder; ~11-13x EBIT after -60%","Peak-cycle margins; DBM debt-funded steel deal; 51.7% controlling holder","FY26 10-K / Q4 results",2026-11-20 (est.),2026-11-08,"DBM Global acquisition closed 2026-10-05"
+POWL,Powell Industries,Nasdaq,watch,133.12,4850,"Custom switchgear; $2.4B backlog; no debt","Margins 2.5x historical peak; data-center order concentration; ~20x adj. EBIT","FY26 Q4 results",2026-11-17 (est.),2026-11-08,"Q3 FY26 bookings $934M"
+MPTI,M-tron Industries,NYSE American,watch,60.34,262,"A&D RF/frequency components; backlog +37% y/y; $96M cash","~49% dilution; M&A-oriented pay; top-2 customers 51%","Q3-26 results",2026-11-12 (est.),2026-11-08,"Rights offering Apr-26 @ $59"
+BKTI,BK Technologies,NYSE American,watch,66.94,271,"Multiband LMR radios; GM ~52%; net cash","HQ roof collapse Oct-8-26; backlog $3.2M","Q3-26 results + guidance update",2026-11-13 (est.),2026-11-08,"8-K roof collapse 2026-10-13"
+PSIX,Power Solutions Intl,Nasdaq,watch,39.16,903,"Gensets/engines incl. data center; ~9x trailing EBIT","Weichai control; class action; lower DC margins","Q4-26 results",2027-03 (est.),2026-11-08,"Q3-26 10-Q 2026-11-05"
+AGX,Argan,NYSE,shortlist,277.50,3893,"Gas power-plant EPC; net cash; Jul-26 qtr rev +62%","Few large projects; -65% drawdown","Q3 FY27 results",2026-12 (est.),2026-11-08,
+CAMT,Camtek,Nasdaq,shortlist,97.05,4448,"Advanced-packaging/HBM inspection","Convertible debt not in screen; semicap cycle; Israel","Q3-26 6-K 2026-11-04 (read next run)",2026-11-04,2026-11-08,
+USLM,US Lime & Minerals,Nasdaq,shortlist,118.10,3388,"Regional lime quasi-monopoly; 42% op margin; $439M cash","Slow growth; construction/steel cycle","Q4-26 results",2027-02 (est.),2026-11-08,
+LMAT,LeMaitre Vascular,Nasdaq,shortlist,80.89,1851,"Niche vascular devices; steady 10-15% growth","~27x EBIT","Q4-26 results",2027-02 (est.),2026-11-08,
+LMB,Limbach Holdings,Nasdaq,shortlist,53.45,627,"Owner-direct MEP services; Q3-26 revenue inflection","Low gross margin; execution","Q3-26 10-Q (filed 2026-11-03; read next run)",2026-11-03,2026-11-08,
+PPIH,Perma-Pipe,Nasdaq,shortlist,28.42,233,"Pre-insulated piping; ~8x EBIT","Weak FCF; Middle East exposure","Q3 FY26 results",2026-12 (est.),2026-11-08,
+ESP,Espey Mfg,NYSE American,shortlist,46.11,140,"Military power supplies; net cash","Illiquid micro-cap","Q1 FY27 10-Q",2026-11 (est.),2026-11-08,
+RDCM,Radcom,Nasdaq,shortlist,10.07,167,"5G assurance; ~2/3 of cap in cash","Customer concentration","Q3-26 results",2026-11 (est.),2026-11-08,
+AZZ,AZZ Inc,NYSE,shortlist,125.71,3762,"Galvanizing/coil coating; high FCF","Modest growth; leverage","Q3 FY27 results",2027-01 (est.),2026-11-08,
+PLAB,Photronics,Nasdaq,shortlist,27.36,1614,"Photomasks; ~$550M cash; low EV/EBIT","Flat revenue; China JV","Q4 FY26 results",2026-12 (est.),2026-11-08,
+ELMD,Electromed,NYSE American,shortlist,27.17,227,"Airway clearance; 15%+ growth","Reimbursement","Q1 FY27 10-Q",2026-11 (est.),2026-11-08,
+UFPT,UFP Technologies,Nasdaq,shortlist,303.47,2351,"Med-device components compounder","~26x EBIT; concentration","Q4-26",2027-02 (est.),2026-11-08,
+TGLS,Tecnoglass,NYSE,shortlist,43.94,1949,"Architectural glass; ~9x EBIT","Tariffs; falling margins","Q3-26 results",2026-11 (est.),2026-11-08,
+OSPN,OneSpan,Nasdaq,shortlist,21.59,797,"Authentication software; profitable; ~15x EBIT","Flat revenue","Q4-26",2027-02 (est.),2026-11-08,
+NSSC,Napco Security,Nasdaq,shortlist,30.24,1082,"Security hardware + recurring radio services; net cash","Flat revenue; prior restatement","Q2 FY27",2027-02 (est.),2026-11-08,
