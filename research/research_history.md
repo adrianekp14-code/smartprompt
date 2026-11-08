@@ -4,6 +4,18 @@ Log of every research run: what was done, what changed, and what was learned. Ne
 
 ---
 
+## 2026-11-08 — High-Growth strategy added (run #2)
+- Added: `tools/hg_screen.py` (755 stage-A → 566 ranked), `tools/reverse_dcf.py`, `tools/backtest.py` (+robustness), `tools/paper_portfolio.py`, `tools/dca_model.py`;
+  docs in `research/high_growth/` (STRATEGY, BACKTEST, hg_theses, contribution_model, paper_portfolio.csv).
+- Backtest 2018–2025 (8 cohorts, 975–1,629 names): no factor significant (|t|<2); growth/quality-change ≈ 0; valuation +2–3%/yr (n.s.); small caps no edge. Survivorship bias documented.
+- HG deep dives (each with independent skeptic): AEIS, CAMT, TMDX, KLIC — all "survive with major caveats". Ranking: AEIS > IESC > CAMT > TMDX > KLIC.
+- Screen error caught by skeptic: reverse DCF used CY2025 FCF (TMDX 22%) instead of TTM (~6%) — fix: feed TTM FCF.
+- Paper portfolio: 9 rows (4 HG + 5 CORE), entry = first close after 2026-11-08.
+- Scheduled task created: weekdays 22:41 UTC, fresh cloud session, push notification on completion (delivery not confirmed back to the session).
+- Notifications this run: none (threshold not met).
+
+---
+
 ## 2026-11-08 — Initial discovery scan (run #1)
 
 ### Data sources actually used

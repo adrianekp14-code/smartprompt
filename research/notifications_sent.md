@@ -10,6 +10,6 @@ Every prepared notification is listed here with its delivery status. "Delivered"
 A company is re-notified only if its research status changes materially (e.g., held → passed, thesis invalidated, or valuation moves through a scenario boundary).
 
 ## Delivery channels
-- Scheduled cloud runs (Claude Code scheduled task) send a completion push notification to the account owner's Claude app when a run finishes with something noteworthy. Delivery of these pushes is not confirmed back to the session.
+- Scheduled task "Equity discovery agent — daily research run" (weekdays 22:41 UTC, created 2026-11-08). Scheduled cloud runs (Claude Code scheduled task) send a completion push notification to the account owner's Claude app when a run finishes with something noteworthy. Delivery of these pushes is not confirmed back to the session.
 - Every notification is also committed to `research/notifications/` on branch `claude/equity-discovery-agent-z5gom2`.
 - Email / Telegram: not configured (requires the owner's decision and, for Telegram, a bot token).
