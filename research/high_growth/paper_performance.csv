@@ -1,0 +1,10 @@
+ticker,strategy,entry_date,entry_price,mark_date,mark_price,total_return_net,benchmark,benchmark_return,excess,status,vs_bear,vs_base,vs_bull,note
+AEIS,HG,,,,,,,,,,,,,awaiting first close after identification
+CAMT,HG,,,,,,,,,,,,,awaiting first close after identification
+TMDX,HG,,,,,,,,,,,,,awaiting first close after identification
+KLIC,HG,,,,,,,,,,,,,awaiting first close after identification
+IESC,CORE,,,,,,,,,,,,,awaiting first close after identification
+POWL,CORE,,,,,,,,,,,,,awaiting first close after identification
+MPTI,CORE,,,,,,,,,,,,,awaiting first close after identification
+BKTI,CORE,,,,,,,,,,,,,awaiting first close after identification
+PSIX,CORE,,,,,,,,,,,,,awaiting first close after identification

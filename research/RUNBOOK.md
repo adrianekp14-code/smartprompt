@@ -61,3 +61,24 @@ FINAL ASSESSMENT. Then deliver via the configured channel(s) and record the resu
 ## Scores (1–5, separate, never combined into a return probability)
 Business quality · Growth potential · Financial strength · Competitive advantage · Management quality · Valuation attractiveness ·
 Downside risk (5 = low risk) · Evidence quality.
+
+## High-Growth (HG) strategy add-on — see `research/high_growth/STRATEGY.md`
+| Script | Purpose |
+|---|---|
+| `python3 tools/hg_screen.py` | HG screen + reverse DCF → `research/high_growth/hg_screen_DATE.csv` (needs `screen.py` run first) |
+| `python3 tools/reverse_dcf.py EV REV m0 m1` | Market-implied 10-year revenue CAGR for one company |
+| `python3 tools/paper_portfolio.py` | Fill entry prices (first close after identification), mark all paper positions, log performance |
+| `python3 tools/fetch_history.py frames prices` + `python3 tools/backtest.py` + `python3 tools/backtest_robust.py` | Re-run historical backtest (annually, after June) |
+| `python3 tools/dca_model.py` | Educational $50/2-week contribution model |
+
+- **Daily:** run `paper_portfolio.py`. Check HG candidates' new filings the same way as the core watchlist.
+- **Weekly:** run `hg_screen.py`. Review ≥ 10 new names by hand. Any name that reaches "serious candidate" gets:
+  - the six mispricing questions answered;
+  - an independent skeptic agent review;
+  - its scores recorded in `research/high_growth/hg_theses.md`;
+  - a row in `paper_portfolio.csv` the same day. Rows are never deleted. A closed thesis gets `status=closed` and an `exit_date`.
+- **Quarterly:**
+  - re-score every HG candidate;
+  - record scenario calibration (price vs bear/base/bull);
+  - update `performance_log.csv` analysis in `hg_theses.md` ("Strategy scorecard").
+- **Annually (July):** extend and re-run the backtest with the new cohort. Never tune factors to improve history.

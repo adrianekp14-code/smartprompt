@@ -1,0 +1,6 @@
+composite, all caps (baseline)         years=8 mean(top-EW)=+0.008 median=+0.012 beats=4/8 mean(top-bottom)=+0.009
+composite, small caps $100M-$2B        years=8 mean(top-EW)=-0.003 median=-0.010 beats=3/8 mean(top-bottom)=+0.003
+composite, mid caps $2B-$20B           years=8 mean(top-EW)=+0.025 median=+0.023 beats=6/8 mean(top-bottom)=+0.025
+composite, un-winsorized               years=8 mean(top-EW)=-0.003 median=+0.003 beats=4/8 mean(top-bottom)=-0.079
+composite, median returns              years=8 mean(top-EW)=-0.005 median=-0.006 beats=4/8 mean(top-bottom)=+0.019
+composite + cheapest half EV/S         years=8 mean(top-EW)=+0.010 median=-0.002 beats=4/8 mean(top-bottom)=+0.013
