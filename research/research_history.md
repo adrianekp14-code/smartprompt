@@ -4,6 +4,36 @@ Log of every research run: what was done, what changed, and what was learned. Ne
 
 ---
 
+## 2026-11-13 — Daily run (Friday)
+Note: no runs are recorded for 2026-11-09…11-12 (only two ad-hoc commits: AEIS correction, NVDA prediction). This run covers filings since 2026-11-08.
+
+**Paper portfolio** (marks = Yahoo close 2026-11-13T21:00Z; entry = first close after 2026-11-08, i.e. 2026-11-09). All 9 entries now filled.
+CORE (5): EW net −2.4% vs benchmarks −1.1% (3 of 5 ahead). HG (4): EW net −1.6% vs −0.3% (2 of 4 ahead). Worst: BKTI −12.3% (guide cut). Four days of data: no meaning.
+Tool bug fixed (rate-limit 429 had been recorded as "data-ended").
+
+**Filings reviewed (EDGAR submissions, 23 tickers):**
+- MPTI 10-Q/8-K (Q3): both checkpoints met (backlog $84.9M, GM 44.5%). NI growth mostly related-party interest income; op income flat y/y.
+- BKTI 10-Q/8-K×2 (Q3): FY26 guide cut ($90M → ~$85M revenue; GAAP EPS >$3.15 → $2.40); backlog $6.3M; buyback auth +$5M. Correction: GAAP TTM FCF $11.8M, not $19M.
+- PSIX 8-K 1.01: fixed-price HCE engine supply 2027–28 (~$121.9M purchases, 10% advances). Form 4 (CFO) = option exercise/tax withholding.
+- CAMT Q3 6-K (from 11-04, carried over): checkpoints met; $877.1M cash/investments now FACT; convert carrying $489.2M; goodwill +$38M (acquisition terms MISSING).
+- TGLS 10-Q + 8-K/A: margin collapse; earnings-release net income corrected −$6.0M; ~14x TTM EBIT, not ~9x → under review.
+- LMB 10-Q (carried over), ELMD 10-Q, ESP 10-Q, RDCM 6-K, PPIH 8-K (51% of an Indian coating JV): summarised in watchlist `last_event`; no thesis change.
+- Form 4s: USLM CEO sold 42,000 sh (~$5.0M) on 11-10; OSPN director/CFO/GC sales (~37k sh); AEIS EVP 10b5-1 sale (3,238 sh); TMDX director 4,059 sh. Governance note for USLM.
+- IESC: no 10-K yet (13F-HR only). FY26 Q4 date unconfirmed (aggregators REPORTED Nov 20 or Dec 9). Held notification stays held.
+- No filings: POWL, AGX, LMAT, AZZ, PLAB, UFPT, NSSC, KLIC.
+
+**News (REPORTED):** POWL reports FY26 Q4 after close Mon 2026-11-16 (GlobeNewswire via finviz). TGLS mgmt calls Q3 the margin trough, Q4 GM guide 38–39%, third straight EBITDA guide cut (finviz/stockstory). BKTI Q2 guide confirmed from the primary filing.
+
+**Checkpoints tested:** MPTI backlog/GM → met. BKTI guide ≥ $85M → met at the boundary (EPS guide −24%). CAMT 2027 ≥ $800M, GM ≥ 50% → met. Others not yet due.
+
+**Corrections:** 3 rows (BKTI FCF, TGLS valuation, paper-portfolio tool).
+
+**Notifications:** none. Threshold not met; IESC send criteria await the FY26 10-K. No candidate reached "survives" in a disproof review this run (none run: no new high-conviction candidate).
+
+**Next run:** POWL FY26 Q4 (11-16), IESC 10-K / earnings schedule, KLIC FY26 Q4 (invalidation if Q4 revenue < $355M). Monday 11-16 = weekly screen (not first Monday of the month).
+
+---
+
 ## 2026-11-08 — High-Growth strategy added (run #2)
 - Added: `tools/hg_screen.py` (755 stage-A → 566 ranked), `tools/reverse_dcf.py`, `tools/backtest.py` (+robustness), `tools/paper_portfolio.py`, `tools/dca_model.py`;
   docs in `research/high_growth/` (STRATEGY, BACKTEST, hg_theses, contribution_model, paper_portfolio.csv).
