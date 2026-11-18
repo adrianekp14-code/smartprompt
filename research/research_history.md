@@ -4,6 +4,13 @@ Log of every research run: what was done, what changed, and what was learned. Ne
 
 ---
 
+## 2026-11-18 — Scheduled-run push failures; NVDA review; POWL recovered
+- Daily routine runs on 11-13, 11-17, 11-18 (manual test) and 11-18 (scheduled) all completed research but were refused by GitHub (403: repo not in the routine's authorized sources). Owner edited the routine; manual test and scheduled run still failed. Findings recovered here from run transcripts (11-13 earlier; POWL 11-17 now).
+- NVDA post-earnings review: see research/reviews/2026-11-18-NVDA.md — does not pass (CEO resignation, board investigation, delayed 10-Q).
+- POWL FY26: both checkpoints met; still watchlist (base < price).
+
+---
+
 ## 2026-11-13 — Daily run (Friday)
 Note: no runs are recorded for 2026-11-09…11-12 (only two ad-hoc commits: AEIS correction, NVDA prediction). This run covers filings since 2026-11-08.
 

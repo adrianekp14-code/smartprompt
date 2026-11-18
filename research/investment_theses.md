@@ -47,6 +47,16 @@ MV-switchgear capacity; director T. W. Powell sold ~$51M in Feb–Jun 2026; CEO 
 Bull $1.8B, 20%, 18x + $0.7B → ≈ $197. Price $133 > base ⇒ fails "valuation deserves investigation" test today.
 **Checkpoints:** FY26 Q4 results (~Nov 17, 2026): gross margin ≥ 29%, Q4 book-to-bill ≥ 1.0, FY27 commentary. Revisit below ~$100 or if margins prove durable.
 
+### POWL update 2026-11-18 — FY26 Q4 / 10-K (recovered from the 2026-11-17 scheduled run, whose push was rejected)
+*Superseded: the 2026-11-08 scenarios ($44 / $110 / $197) are kept above for the record.*
+| # | Claim | Type | Source |
+|---|---|---|---|
+| 1 | Q4 FY26 revenue $397M (+33%); gross margin 34.9%; net income $82M ($2.23/sh); orders $710M (book-to-bill 1.8x); backlog $2.7B (+96%); cash and short-term investments $861M | FACT (re-verified by me 2026-11-18) | 8-K Ex. 99.1 https://www.sec.gov/Archives/edgar/data/80420/000008042026000139/ex991-powlq4xfy2026earning.htm |
+| 2 | FY26 revenue $1.3B (+14%); GM 31.3%; NI $221M ($6.04/sh); FY orders $2.6B (B/B 2.0x); Q4 mega orders: LNG ~$250M, data center ~$85M | FACT (re-verified) | same |
+| 3 | No customer >10% of revenue; excess cash net of customer advances ≈ $415M; ≈19x TTM EBIT at $150.86; receivables +62% vs revenue +14% | REPORTED (2026-11-17 run, from FY26 10-K; not re-verified by me) | 10-K |
+| 4 | Revised scenarios $54 / $141 / $242 (bear −64%) | ASSUMPTION (2026-11-17 run) | — |
+**Checkpoints:** Q4 GM ≥ 29% → met (34.9%); Q4 book-to-bill ≥ 1.0 → met (1.8x). **Status: watchlist** — base value ($141) below price; bear case large.
+
 ---
 
 ## MPTI — M-tron Industries (NYSE American) — status: WATCHLIST
@@ -87,7 +97,7 @@ Weichai 46% + board majority, collaboration agreement expired 2026-03-20; securi
 | Date set | Ticker | Assumption | Check date | Actual | Verdict |
 |---|---|---|---|---|---|
 | 2026-11-08 | IESC | Q4 FY26 C&I op margin ≥ 13% | FY26 10-K | — | pending |
-| 2026-11-08 | POWL | Q4 FY26 gross margin ≥ 29%, book-to-bill ≥ 1.0 | ~2026-11-17 | — | pending |
-| 2026-11-08 | MPTI | Backlog ≥ $84M at 2026-09-30 | ~2026-11-12 | — | pending |
+| 2026-11-08 | POWL | Q4 FY26 gross margin ≥ 29%, book-to-bill ≥ 1.0 | ~2026-11-17 | GM 34.9%; B/B 1.8x | met |
+| 2026-11-08 | MPTI | Backlog ≥ $84M at 2026-09-30 | ~2026-11-12 | $84.9M; GM 44.5% (REPORTED, 2026-11-13 run) | met |
 | 2026-11-08 | BKTI | 2026 revenue guidance ≥ $85M after roof collapse | Q3 report | — | pending |
 | 2026-11-08 | PSIX | Q4-26 gross margin ex-refund ≥ 25% | Mar 2027 | — | pending |
