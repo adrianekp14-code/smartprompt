@@ -15,13 +15,17 @@ UA = {"User-Agent": "EquityResearchAgent/1.0 research-bot"}
 _cache = {}
 def daily(t):
     if t in _cache: return _cache[t]
-    try:
+    import time
+    for attempt in range(5):
+      try:
         m = json.load(urllib.request.urlopen(urllib.request.Request(
             f"https://query1.finance.yahoo.com/v8/finance/chart/{t.replace('.', '-')}?range=5y&interval=1d&events=div,split", headers=UA), timeout=30))["chart"]["result"][0]
         ts = m["timestamp"]; c = m["indicators"]["quote"][0]["close"]; a = m["indicators"]["adjclose"][0]["adjclose"]
         s = [(datetime.datetime.fromtimestamp(x, datetime.UTC).date().isoformat(), cc, aa) for x, cc, aa in zip(ts, c, a) if cc and aa]
-    except Exception:
-        s = None
+        break
+      except Exception:
+        s = None; time.sleep(2 * (attempt + 1))
+    time.sleep(0.5)
     _cache[t] = s; return s
 def first_after(s, d):
     for row in s:
@@ -36,7 +40,7 @@ today = datetime.date.today().isoformat(); perf = []
 for r in rows:
     s = daily(r["ticker"]); b = daily(r["benchmark"])
     if not s or not b:
-        r["status"] = r["status"] if r["status"] != "active" else "data-ended — investigate"; continue
+        perf.append(dict(ticker=r["ticker"], strategy=r["strategy"], note="price fetch failed (rate limit?) - status NOT changed; retry next run")); continue
     e = first_after(s, r["date_identified"])
     if not e: perf.append(dict(ticker=r["ticker"], strategy=r["strategy"], note="awaiting first close after identification")); continue
     if not r["entry_price"]:

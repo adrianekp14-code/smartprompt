@@ -4,6 +4,14 @@ Log of every research run: what was done, what changed, and what was learned. Ne
 
 ---
 
+## 2026-11-19 (scheduled, 4:41 PM CT) — Daily run
+- Filings since last run: KLIC FY26 10-K (results already covered via 8-K; not re-read in full); PSIX 8-K 5.02 (FACT): CFO Xun (Ken) Li resigning effective 2026-11-27 (first disclosed in 8-K of 2026-11-06, missed by the 11-08/11-13 runs); Robert Losier (Anchor Resource Management consultant) interim CFO from 11-28. Second senior change in 2026 after the CEO change → governance score stays 1; watchlist unchanged.
+- Owned: VOO $658.01 (−2.0% day), IESC $166.90 (+0.5%), AEIS $212.24 (−1.5%) — closes 2026-11-19. No IESC/AEIS filings. IESC 10-K still pending.
+- Tool fix: Yahoo rate limits had again marked 8 positions "data-ended"; changes discarded, tools/paper_portfolio.py now retries with backoff and never changes status on a fetch failure. 3 positions (MPTI, BKTI, PSIX) unmarked today; performance_log rows for 11-19 with n<5/9 are partial.
+- Notifications: none — threshold not met.
+
+---
+
 ## 2026-11-19 — Daily run (first in-session run; covers filings since 2026-11-17)
 - Paper portfolio (entry 2026-11-09 close, marks 2026-11-18 close, net of costs): HG EW −2.2% vs benchmarks −5.0% (3 of 4 ahead); CORE EW −3.7% vs −3.6% (2 of 5 ahead). Seven trading days: no meaning yet.
 - KLIC 8-K (Q4 FY26, FACT): revenue $410.3M (> $355M invalidation level → not triggered); GM 47.8%; NI $73.2M; CFO only $25.4M, adj. FCF $14.6M (cash conversion weak); Q1 FY27 guide $410M ±$20M (flat q/q); cash+ST inv $517.0M. Stance unchanged (expensive on mid-cycle).
