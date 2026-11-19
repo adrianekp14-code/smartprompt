@@ -4,6 +4,16 @@ Log of every research run: what was done, what changed, and what was learned. Ne
 
 ---
 
+## 2026-11-19 — Daily run (first in-session run; covers filings since 2026-11-17)
+- Paper portfolio (entry 2026-11-09 close, marks 2026-11-18 close, net of costs): HG EW −2.2% vs benchmarks −5.0% (3 of 4 ahead); CORE EW −3.7% vs −3.6% (2 of 5 ahead). Seven trading days: no meaning yet.
+- KLIC 8-K (Q4 FY26, FACT): revenue $410.3M (> $355M invalidation level → not triggered); GM 47.8%; NI $73.2M; CFO only $25.4M, adj. FCF $14.6M (cash conversion weak); Q1 FY27 guide $410M ±$20M (flat q/q); cash+ST inv $517.0M. Stance unchanged (expensive on mid-cycle).
+- AEIS Form 4 (FACT): Lanesha Minnix sold 2,000 sh at $208.73 (~$0.42M); 10b5-1 status not stated in filing text parsed. Small; no thesis change.
+- PPIH 8-K 1.01 (FACT): closed 51% of Welspun Special Coating (India) JV via Qatar subsidiary. Immaterial to thesis.
+- RDCM, ESP: Form 4/144 only. POWL 10-K already covered. IESC: still no 10-K.
+- Notifications: none — threshold not met.
+
+---
+
 ## 2026-11-19 — Daily runs moved into the owner's chat session
 Owner approved. New schedule "Daily equity research run (in owner's chat)" (weekdays 4:41 PM America/Chicago) fires into the original analyst session, which can push. Old routine "Equity discovery agent — daily research run" disabled (kept for history).
 

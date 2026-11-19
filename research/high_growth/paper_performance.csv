@@ -1,10 +1,10 @@
 ticker,strategy,entry_date,entry_price,mark_date,mark_price,total_return_net,benchmark,benchmark_return,excess,status,vs_bear,vs_base,vs_bull,note
-AEIS,HG,,,,,,,,,,,,,awaiting first close after identification
-CAMT,HG,,,,,,,,,,,,,awaiting first close after identification
-TMDX,HG,,,,,,,,,,,,,awaiting first close after identification
-KLIC,HG,,,,,,,,,,,,,awaiting first close after identification
-IESC,CORE,,,,,,,,,,,,,awaiting first close after identification
-POWL,CORE,,,,,,,,,,,,,awaiting first close after identification
-MPTI,CORE,,,,,,,,,,,,,awaiting first close after identification
-BKTI,CORE,,,,,,,,,,,,,awaiting first close after identification
-PSIX,CORE,,,,,,,,,,,,,awaiting first close after identification
+AEIS,HG,2026-11-09,219.3,2026-11-18,215.4,-0.0197,SMH,-0.0572,0.0374,active,85,246,396,
+CAMT,HG,2026-11-09,105.04,2026-11-18,98.42,-0.0649,SMH,-0.0572,-0.0077,active,50,113,197,
+TMDX,HG,2026-11-09,93.79,2026-11-18,96.43,0.0261,IHI,-0.0287,0.0548,active,52,124,270,
+KLIC,HG,2026-11-09,68.97,2026-11-18,66.99,-0.0306,SMH,-0.0572,0.0265,active,26,52,101,
+IESC,CORE,2026-11-09,173.92,2026-11-18,166.05,-0.0472,XLI,-0.025,-0.0221,active,75,199,322,
+POWL,CORE,2026-11-09,141.65,2026-11-18,154.95,0.0924,XLI,-0.025,0.1174,active,44,110,197,
+MPTI,CORE,2026-11-09,63.95,2026-11-18,67.62,0.0468,IWM,-0.0439,0.0907,active,40,70,117,
+BKTI,CORE,2026-11-09,69.36,2026-11-18,59.66,-0.1484,IWM,-0.0439,-0.1046,active,32,76,150,
+PSIX,CORE,2026-11-09,37.72,2026-11-18,33.19,-0.1289,IWM,-0.0439,-0.085,active,18,45,72,
