@@ -1,10 +1,10 @@
 ticker,strategy,entry_date,entry_price,mark_date,mark_price,total_return_net,benchmark,benchmark_return,excess,status,vs_bear,vs_base,vs_bull,note
-AEIS,HG,2026-11-09,219.3,2026-11-19,212.24,-0.0341,SMH,-0.0819,0.0478,active,85,246,396,
-CAMT,HG,2026-11-09,105.04,2026-11-19,97.78,-0.071,SMH,-0.0819,0.0109,active,50,113,197,
-TMDX,HG,2026-11-09,93.79,2026-11-19,94.02,0.0004,IHI,-0.0434,0.0438,active,52,124,270,
-KLIC,HG,2026-11-09,68.97,2026-11-19,61.58,-0.1089,SMH,-0.0819,-0.027,active,26,52,101,
-IESC,CORE,2026-11-09,173.92,2026-11-19,166.9,-0.0423,XLI,-0.0446,0.0023,active,75,199,322,
-POWL,CORE,2026-11-09,141.65,2026-11-19,158.75,0.1191,XLI,-0.0446,0.1637,active,44,110,197,
-MPTI,CORE,,,,,,,,,,,,,price fetch failed (rate limit?) - status NOT changed; retry next run
-BKTI,CORE,,,,,,,,,,,,,price fetch failed (rate limit?) - status NOT changed; retry next run
+AEIS,HG,2026-11-09,219.3,2026-11-20,190.18,-0.1345,SMH,-0.1792,0.0447,active,85,246,396,
+CAMT,HG,2026-11-09,105.04,2026-11-20,89.2,-0.1525,SMH,-0.1792,0.0267,active,50,113,197,
+TMDX,HG,,,,,,,,,,,,,price fetch failed (rate limit?) - status NOT changed; retry next run
+KLIC,HG,2026-11-09,68.97,2026-11-20,54.71,-0.2083,SMH,-0.1792,-0.0291,active,26,52,101,
+IESC,CORE,2026-11-09,173.92,2026-11-20,156.06,-0.1045,XLI,-0.0741,-0.0304,active,75,199,322,
+POWL,CORE,2026-11-09,141.65,2026-11-20,148.18,0.0446,XLI,-0.0741,0.1188,active,44,110,197,
+MPTI,CORE,2026-11-09,63.95,2026-11-20,63.24,-0.021,IWM,-0.0917,0.0707,active,40,70,117,
+BKTI,CORE,2026-11-09,69.36,2026-11-20,57.0,-0.1864,IWM,-0.0917,-0.0947,active,32,76,150,
 PSIX,CORE,,,,,,,,,,,,,price fetch failed (rate limit?) - status NOT changed; retry next run

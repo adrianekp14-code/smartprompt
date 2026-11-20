@@ -34,6 +34,20 @@ RPO $2.8B contractual + $1.7B non-enforceable agreements. Acquired DBM Global (s
 **Checkpoints:** FY26 10-K (expected ~Nov 20–Dec 9, 2026): Q4 C&I margin ≥ 13%; RPO ≥ $2.8B; operating cash flow ex-securities purchases positive;
 DBM segment margin disclosed. Invalidation: C&I margins back to ~10%, RPO decline, Tontine sale, further debt-funded low-margin M&A.
 
+### IESC update 2026-11-20 — FY26 Q4 / 10-K (status: notification still HELD — 3 of 4 send criteria met; DBM economics MISSING)
+| # | Claim | Type | Source |
+|---|---|---|---|
+| 1 | Q4 FY26 revenue $1,390.0M (+55%); operating income $217.2M (15.6%); NI attributable $182.3M ($4.50/sh); adj. EPS $4.07 | FACT | 8-K Ex. 99.1 2026-11-20 https://www.sec.gov/Archives/edgar/data/1048268/000104826826000176/q42026pressrelease-septemb.htm |
+| 2 | FY26 revenue $4,477.9M (+33%); operating income $605.7M (13.5%); NI $536.6M ($13.24/sh) | FACT | same |
+| 3 | Q4 segment op income/revenue: Communications $87.8M/$515.8M (17.0%); Residential $8.5M/$320.3M (2.7%); Infrastructure Solutions $63.5M/$269.9M (23.5%); **C&I $77.7M/$287.3M (27.0%)** | FACT (margins my arithmetic) | same |
+| 4 | Company: margins "benefited from some large, quick-turning projects we executed at favorable margins" (2H FY26) | FACT (management statement) | same |
+| 5 | RPO $3.48B; backlog (non-GAAP) $4.96B; DBM adds $2.6B backlog not included | FACT | same |
+| 6 | FY26 operating cash flow $364.5M; capex $163.1M; acquisitions $143.1M → FCF ≈ $201M | FACT (FCF my arithmetic) | same |
+| 7 | Post year-end repurchased 350,000 sh at avg $248.00 (~$86.8M); board added $350M authorization | FACT | 10-K subsequent events; 8-K |
+| 8 | DBM purchase-price allocation and pro forma revenue/earnings: to be disclosed in Q1 FY27 10-Q | MISSING (per 10-K) | 10-K https://www.sec.gov/Archives/edgar/data/1048268/000104826826000175/iesc-20260930.htm |
+| 9 | Close 2026-11-20 $156.06 (−6.5% day; VOO −3.4%, SMH −10.6%); ≈40M shares → mkt cap ≈ $6.2B; ≈10–11x FY26 EBIT before DBM and its $525M borrowing | FACT (price) / ASSUMPTION (multiple) | Yahoo |
+**Send criteria:** C&I Q4 margin ≥ 13% → met (27.0%, partly one-off per management); RPO ≥ $2.8B → met ($3.48B); positive CFO → met ($364.5M); DBM economics disclosed → **not met (MISSING until ~Feb 2027)**. Also required before any send: final adversarial disproof review with verdict "survives". **Held.**
+
 ---
 
 ## POWL — Powell Industries (Nasdaq) — status: WATCHLIST (valuation not compelling on adjusted cash)
@@ -96,7 +110,7 @@ Weichai 46% + board majority, collaboration agreement expired 2026-03-20; securi
 ## Assumption tracking (evaluated each month/quarter)
 | Date set | Ticker | Assumption | Check date | Actual | Verdict |
 |---|---|---|---|---|---|
-| 2026-11-08 | IESC | Q4 FY26 C&I op margin ≥ 13% | FY26 10-K | — | pending |
+| 2026-11-08 | IESC | Q4 FY26 C&I op margin ≥ 13% | FY26 10-K | 27.0% (8-K 2026-11-20); mgmt cites one-off quick-turn projects | met |
 | 2026-11-08 | POWL | Q4 FY26 gross margin ≥ 29%, book-to-bill ≥ 1.0 | ~2026-11-17 | GM 34.9%; B/B 1.8x | met |
 | 2026-11-08 | MPTI | Backlog ≥ $84M at 2026-09-30 | ~2026-11-12 | $84.9M; GM 44.5% (REPORTED, 2026-11-13 run) | met |
 | 2026-11-08 | BKTI | 2026 revenue guidance ≥ $85M after roof collapse | Q3 report | — | pending |

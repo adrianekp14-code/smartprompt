@@ -4,6 +4,15 @@ Log of every research run: what was done, what changed, and what was learned. Ne
 
 ---
 
+## 2026-11-20 — Daily run
+- **IESC FY26 10-K + Q4 8-K filed (FACT, see investment_theses.md IESC update 2026-11-20):** Q4 revenue +55%, op income +108%, C&I margin 27.0%, RPO $3.48B, CFO $364.5M; 350k shares bought back at $248 after year-end; +$350M authorization. DBM economics deferred to Q1 FY27 10-Q → held notification stays held (3 of 4 criteria met). 8-K Item 5.02 = executive bonuses/incentive plans (no departures).
+- **Market:** chip stocks fell sharply (SMH −10.6%, KLIC −11.2%, CAMT −8.8%; AEIS ≈ −10% to $190.18); VOO −3.4%; IESC −6.5% to $156.06. Cause of the selloff: MISSING (one search found no Nov-20 coverage). No AEIS company filings.
+- LMAT Form 4 (not read in detail; insider transaction).
+- Paper portfolio (marks 11-20; TMDX, PSIX unmarked due to rate limits): HG EW −16.5% vs −17.9% benchmarks; CORE EW −6.7% vs −8.3%.
+- Notifications: none sent (IESC held).
+
+---
+
 ## 2026-11-19 (scheduled, 4:41 PM CT) — Daily run
 - Filings since last run: KLIC FY26 10-K (results already covered via 8-K; not re-read in full); PSIX 8-K 5.02 (FACT): CFO Xun (Ken) Li resigning effective 2026-11-27 (first disclosed in 8-K of 2026-11-06, missed by the 11-08/11-13 runs); Robert Losier (Anchor Resource Management consultant) interim CFO from 11-28. Second senior change in 2026 after the CEO change → governance score stays 1; watchlist unchanged.
 - Owned: VOO $658.01 (−2.0% day), IESC $166.90 (+0.5%), AEIS $212.24 (−1.5%) — closes 2026-11-19. No IESC/AEIS filings. IESC 10-K still pending.
