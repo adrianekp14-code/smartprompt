@@ -4,6 +4,15 @@ Log of every research run: what was done, what changed, and what was learned. Ne
 
 ---
 
+## 2026-11-23 (Monday) — Daily run + weekly screen
+- Filings since 11-21: none on any watchlist/paper ticker.
+- Owned (closes 11-23): VOO $663.91 (+4.5%), IESC $170.92 (+9.5%), AEIS $214.07 (+12.6%) — broad rebound after the 11-20 selloff.
+- Weekly screen: refreshed CY2026Q3 frames; stage-1 598; HG screen → research/high_growth/hg_screen_2026-11-23.csv. Hand-reviewed 23 previously unreviewed names (decisions.json): 20 rejected (commodity, acquisition-driven, consumer, mega/well-followed, dilution); **NPKI** and **MKSI** → watch. NPKI (composite matting for utility/grid sites) queued for deep research next run — screen figures are NOT yet verified.
+- Paper portfolio: rate limits left 5 of 9 unmarked today (statuses unchanged).
+- Notifications: none — threshold not met.
+
+---
+
 ## 2026-11-20 — Daily run
 - **IESC FY26 10-K + Q4 8-K filed (FACT, see investment_theses.md IESC update 2026-11-20):** Q4 revenue +55%, op income +108%, C&I margin 27.0%, RPO $3.48B, CFO $364.5M; 350k shares bought back at $248 after year-end; +$350M authorization. DBM economics deferred to Q1 FY27 10-Q → held notification stays held (3 of 4 criteria met). 8-K Item 5.02 = executive bonuses/incentive plans (no departures).
 - **Market:** chip stocks fell sharply (SMH −10.6%, KLIC −11.2%, CAMT −8.8%; AEIS ≈ −10% to $190.18); VOO −3.4%; IESC −6.5% to $156.06. Cause of the selloff: MISSING (one search found no Nov-20 coverage). No AEIS company filings.

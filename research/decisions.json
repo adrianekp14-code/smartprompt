@@ -588,5 +588,99 @@
  "NOG": {
   "status": "rejected",
   "reason": "Oil & gas"
+ },
+ "NPKI": {
+  "status": "watch",
+  "reason": "Composite matting for utility/grid/infrastructure sites (screen 2026-11-23): growth ~27%, op margin ~17%, FCF ~9.5%, EV/S ~2.4, market-implied 10y growth ~5%; share count down ~9%/3y. Not yet verified against filings",
+  "revisit": "Deep research next run: organic vs acquired growth, rental fleet economics, utility capex dependence"
+ },
+ "VIAV": {
+  "status": "rejected",
+  "reason": "Growth largely acquisition-driven (Spirent); op margin ~7%; integration risk"
+ },
+ "BB": {
+  "status": "rejected",
+  "reason": "Turnaround with modest organic growth; mature segments"
+ },
+ "LIF": {
+  "status": "rejected",
+  "reason": "Consumer app; share count +35% over 3y"
+ },
+ "TRN": {
+  "status": "rejected",
+  "reason": "Railcar manufacturing/leasing cycle; leverage"
+ },
+ "GWRE": {
+  "status": "rejected",
+  "reason": "Well-followed insurance SaaS; ~8.5x EV/S"
+ },
+ "UROY": {
+  "status": "rejected",
+  "reason": "Uranium royalty/stream: commodity-price driven; revenue jump from physical sales"
+ },
+ "ELF": {
+  "status": "rejected",
+  "reason": "Consumer cosmetics; outside infrastructure mandate"
+ },
+ "FSLR": {
+  "status": "rejected",
+  "reason": "Solar manufacturing; policy-dependent, decelerating; well-followed"
+ },
+ "MKSI": {
+  "status": "watch",
+  "reason": "Semicap/photonics instruments; ~$1.9B net debt from Atotech deal; recovery growth",
+  "revisit": "Deleveraging + organic growth disclosure"
+ },
+ "RS": {
+  "status": "rejected",
+  "reason": "Metals service center; commodity-price driven"
+ },
+ "HNI": {
+  "status": "rejected",
+  "reason": "Growth from Steelcase merger; office furniture cycle"
+ },
+ "ALSN": {
+  "status": "rejected",
+  "reason": "Growth from acquisition (Dana off-highway); net debt"
+ },
+ "CBZ": {
+  "status": "rejected",
+  "reason": "Growth from Marcum acquisition; accounting services"
+ },
+ "TREX": {
+  "status": "rejected",
+  "reason": "Consumer building products; housing-cycle dependent"
+ },
+ "CELH": {
+  "status": "rejected",
+  "reason": "Consumer beverage; acquisition-driven growth"
+ },
+ "CDRE": {
+  "status": "rejected",
+  "reason": "Safety equipment roll-up; share count +20%/3y"
+ },
+ "JBHT": {
+  "status": "rejected",
+  "reason": "Large-cap trucking; cyclical; well-followed"
+ },
+ "NVT": {
+  "status": "rejected",
+  "reason": "Large well-followed electrical products; ~$18B"
+ },
+ "CF": {
+  "status": "rejected",
+  "reason": "Nitrogen fertilizer: commodity-price driven"
+ },
+ "UAN": {
+  "status": "rejected",
+  "reason": "Nitrogen fertilizer MLP: commodity-price driven"
+ },
+ "DJCO": {
+  "status": "rejected",
+  "reason": "Holding company with large securities portfolio; slow growth"
+ },
+ "GOGO": {
+  "status": "rejected",
+  "reason": "Growth from acquisition; leverage; revenue decelerating"
  }
 }

@@ -36,7 +36,7 @@ NVGS,Navigator Holdings Ltd.,1295,Commodity/shipping/energy-price driven earning
 PR,Permian Resources Corp,18242,Commodity/shipping/energy-price driven earnings; growth reflects cycle not durable niche,2026-11-08,Material change in fundamentals or >30% price move
 IMMR,IMMERSION CORP,225,Revenue consolidated from Barnes & Noble Education acquisition; not core growth,2026-11-08,Material change in fundamentals or >30% price move
 MTDR,Matador Resources Co,6238,Commodity/shipping/energy-price driven earnings; growth reflects cycle not durable niche,2026-11-08,Material change in fundamentals or >30% price move
-CELH,"Celsius Holdings, Inc.",8058,"Valuation already discounts strong growth (EV/S 2.5, EV/EBIT 57)",2026-11-08,Material change in fundamentals or >30% price move
+CELH,"Celsius Holdings, Inc.",8058,Consumer beverage; acquisition-driven growth,2026-11-08,Material change in fundamentals or >30% price move
 INCY,INCYTE CORP,24389,Pharma/biotech: revenue tied to few drugs/licensing; needs clinical/patent analysis outside current screen; one-off license revenue distorts growth,2026-11-08,Material change in fundamentals or >30% price move
 HALO,"HALOZYME THERAPEUTICS, INC.",11815,Pharma/biotech: revenue tied to few drugs/licensing; needs clinical/patent analysis outside current screen; one-off license revenue distorts growth,2026-11-08,Material change in fundamentals or >30% price move
 COLL,"COLLEGIUM PHARMACEUTICAL, INC",752,Pharma/biotech: revenue tied to few drugs/licensing; needs clinical/patent analysis outside current screen; one-off license revenue distorts growth,2026-11-08,Material change in fundamentals or >30% price move
@@ -58,7 +58,7 @@ ANAB,"ANAPTYSBIO, INC",1389,Pharma/biotech: revenue tied to few drugs/licensing;
 UTHR,UNITED THERAPEUTICS Corp,23936,Pharma/biotech: revenue tied to few drugs/licensing; needs clinical/patent analysis outside current screen; one-off license revenue distorts growth,2026-11-08,Material change in fundamentals or >30% price move
 UNIT,Uniti Group Inc.,1267,Highly levered fiber REIT/merger (Windstream); net debt ~$10B,2026-11-08,Material change in fundamentals or >30% price move
 TUYA,Tuya Inc.,985,China IoT platform; geopolitical/VIE risk; low margins,2026-11-08,Material change in fundamentals or >30% price move
-FSLR,"FIRST SOLAR, INC.",21619,"Large/mega-cap ($22B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
+FSLR,"FIRST SOLAR, INC.",21619,"Solar manufacturing; policy-dependent, decelerating; well-followed",2026-11-08,Material change in fundamentals or >30% price move
 SPSC,SPS COMMERCE INC,2903,Supply-chain EDI SaaS; growth decelerated to ~4%,2026-11-08,Material change in fundamentals or >30% price move
 APH,AMPHENOL CORP /DE/,184182,"Large/mega-cap ($184B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
 ALAB,"Astera Labs, Inc.",33333,"Large/mega-cap ($33B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
@@ -79,7 +79,7 @@ ETON,"Eton Pharmaceuticals, Inc.",1628,Pharma/biotech: revenue tied to few drugs
 MDXG,"MIMEDX GROUP, INC.",483,Skin substitutes; Medicare LCD reimbursement change caused -45% revenue,2026-11-08,Material change in fundamentals or >30% price move
 FTNT,"Fortinet, Inc.",87313,"Large/mega-cap ($87B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
 PED,PEDEVCO CORP,198,Commodity/shipping/energy-price driven earnings; growth reflects cycle not durable niche,2026-11-08,Material change in fundamentals or >30% price move
-ELF,"e.l.f. Beauty, Inc.",6869,"Valuation already discounts strong growth (EV/S 3.6, EV/EBIT 100)",2026-11-08,Material change in fundamentals or >30% price move
+ELF,"e.l.f. Beauty, Inc.",6869,Consumer cosmetics; outside infrastructure mandate,2026-11-08,Material change in fundamentals or >30% price move
 QLYS,"QUALYS, INC.",6587,Security SaaS; slow growth ~10%; ~29x EBIT,2026-11-08,Material change in fundamentals or >30% price move
 RELY,"Remitly Global, Inc.",4777,Remittances; dilution; low margins,2026-11-08,Material change in fundamentals or >30% price move
 NAGE,"Niagen Bioscience, Inc.",164,Pharma/biotech: revenue tied to few drugs/licensing; needs clinical/patent analysis outside current screen; one-off license revenue distorts growth,2026-11-08,Material change in fundamentals or >30% price move
@@ -136,11 +136,12 @@ CRC,California Resources Corp,4145,Commodity/shipping/energy-price driven earnin
 FN,Fabrinet,11684,Optical contract mfr; FCF ~0; NVIDIA concentration; $11.7B,2026-11-08,Material change in fundamentals or >30% price move
 CART,Maplebear Inc.,13753,Share count +176% over 3y (or data artifact); dilution risk,2026-11-08,Material change in fundamentals or >30% price move
 MPWR,"MONOLITHIC POWER SYSTEMS, INC.",58055,"Large/mega-cap ($58B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
+ALSN,Allison Transmission Holdings Inc,9600,Growth from acquisition (Dana off-highway); net debt,2026-11-08,Material change in fundamentals or >30% price move
 GRMN,GARMIN LTD,55028,"Large/mega-cap ($55B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
 AMPH,"Amphastar Pharmaceuticals, Inc.",1215,Pharma/biotech: revenue tied to few drugs/licensing; needs clinical/patent analysis outside current screen; one-off license revenue distorts growth,2026-11-08,Material change in fundamentals or >30% price move
 SPGI,S&P Global Inc.,135615,"Large/mega-cap ($136B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
 EME,"EMCOR Group, Inc.",26639,Large-cap contractor; well-followed,2026-11-08,Material change in fundamentals or >30% price move
-LIF,"Life360, Inc.",3860,"Valuation already discounts strong growth (EV/S 6.3, EV/EBIT 191)",2026-11-08,Material change in fundamentals or >30% price move
+LIF,"Life360, Inc.",3860,Consumer app; share count +35% over 3y,2026-11-08,Material change in fundamentals or >30% price move
 VTS,"Vitesse Energy, Inc.",623,Commodity/shipping/energy-price driven earnings; growth reflects cycle not durable niche,2026-11-08,Material change in fundamentals or >30% price move
 UTI,UNIVERSAL TECHNICAL INSTITUTE INC,1098,Share count +65% over 3y (or data artifact); dilution risk,2026-11-08,Material change in fundamentals or >30% price move
 INTU,INTUIT INC.,91261,"Large/mega-cap ($91B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
@@ -171,6 +172,7 @@ BMRN,BIOMARIN PHARMACEUTICAL INC,10853,Pharma/biotech: revenue tied to few drugs
 LOAR,Loar Holdings Inc.,7055,Aerospace components roll-up; ~74x EV/EBIT; PE-owned overhang,2026-11-08,Material change in fundamentals or >30% price move
 BWMN,Bowman Consulting Group Ltd.,754,Share count +43% over 3y (or data artifact); dilution risk,2026-11-08,Material change in fundamentals or >30% price move
 SN,"SharkNinja, Inc.",31416,"Large/mega-cap ($31B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
+GOGO,Gogo Inc.,527,Growth from acquisition; leverage; revenue decelerating,2026-11-08,Material change in fundamentals or >30% price move
 BL,"BLACKLINE, INC.",1479,"Valuation already discounts strong growth (EV/S 1.7, EV/EBIT 50)",2026-11-08,Material change in fundamentals or >30% price move
 MAMA,"Mama's Creations, Inc.",632,"Valuation already discounts strong growth (EV/S 2.4, EV/EBIT 70)",2026-11-08,Material change in fundamentals or >30% price move
 CRON,Cronos Group Inc.,1323,Pharma/biotech: revenue tied to few drugs/licensing; needs clinical/patent analysis outside current screen; one-off license revenue distorts growth,2026-11-08,Material change in fundamentals or >30% price move
@@ -182,22 +184,23 @@ MANH,MANHATTAN ASSOCIATES INC,14677,"Valuation already discounts strong growth (
 ALKS,Alkermes plc.,7713,Pharma/biotech: revenue tied to few drugs/licensing; needs clinical/patent analysis outside current screen; one-off license revenue distorts growth,2026-11-08,Material change in fundamentals or >30% price move
 PEN,Penumbra Inc,12581,"Valuation already discounts strong growth (EV/S 7.9, EV/EBIT 65)",2026-11-08,Material change in fundamentals or >30% price move
 EW,Edwards Lifesciences Corp,58730,"Large/mega-cap ($59B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
-VIAV,VIAVI SOLUTIONS INC.,7001,"Valuation already discounts strong growth (EV/S 3.8, EV/EBIT 65)",2026-11-08,Material change in fundamentals or >30% price move
+VIAV,VIAVI SOLUTIONS INC.,7001,Growth largely acquisition-driven (Spirent); op margin ~7%; integration risk,2026-11-08,Material change in fundamentals or >30% price move
 ROP,ROPER TECHNOLOGIES INC,47201,"Large/mega-cap ($47B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
 PRVA,"Privia Health Group, Inc.",3120,Pharma/biotech: revenue tied to few drugs/licensing; needs clinical/patent analysis outside current screen; one-off license revenue distorts growth,2026-11-08,Material change in fundamentals or >30% price move
 HTHT,H World Group Ltd,156771,"Large/mega-cap ($157B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
 MCO,MOODYS CORP /DE/,87178,"Large/mega-cap ($87B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
+TREX,TREX CO INC,5471,Consumer building products; housing-cycle dependent,2026-11-08,Material change in fundamentals or >30% price move
 TER,"TERADYNE, INC",34069,"Large/mega-cap ($34B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
 LITE,Lumentum Holdings Inc.,48850,"Large/mega-cap ($49B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
 KGS,"Kodiak Gas Services, Inc.",4213,Commodity/shipping/energy-price driven earnings; growth reflects cycle not durable niche,2026-11-08,Material change in fundamentals or >30% price move
 ERII,"Energy Recovery, Inc.",363,Desal pressure exchangers; revenue -65% latest qtr (lumpy mega projects),2026-11-08,Material change in fundamentals or >30% price move
 LQDA,Liquidia Corp,3974,Pharma/biotech: revenue tied to few drugs/licensing; needs clinical/patent analysis outside current screen; one-off license revenue distorts growth,2026-11-08,Material change in fundamentals or >30% price move
 DAL,"DELTA AIR LINES, INC.",57370,"Large/mega-cap ($57B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
-DJCO,DAILY JOURNAL CORP,885,"Valuation already discounts strong growth (EV/S 4.7, EV/EBIT 47)",2026-11-08,Material change in fundamentals or >30% price move
-BB,BLACKBERRY Ltd,5131,"Valuation already discounts strong growth (EV/S 8.1, EV/EBIT 102)",2026-11-08,Material change in fundamentals or >30% price move
+DJCO,DAILY JOURNAL CORP,885,Holding company with large securities portfolio; slow growth,2026-11-08,Material change in fundamentals or >30% price move
+BB,BLACKBERRY Ltd,5131,Turnaround with modest organic growth; mature segments,2026-11-08,Material change in fundamentals or >30% price move
 PBH,Prestige Consumer Healthcare Inc.,2037,Pharma/biotech: revenue tied to few drugs/licensing; needs clinical/patent analysis outside current screen; one-off license revenue distorts growth,2026-11-08,Material change in fundamentals or >30% price move
 AVPT,"AvePoint, Inc.",3477,"Valuation already discounts strong growth (EV/S 6.3, EV/EBIT 93)",2026-11-08,Material change in fundamentals or >30% price move
-GWRE,"Guidewire Software, Inc.",13234,"Valuation already discounts strong growth (EV/S 9.7, EV/EBIT 304)",2026-11-08,Material change in fundamentals or >30% price move
+GWRE,"Guidewire Software, Inc.",13234,Well-followed insurance SaaS; ~8.5x EV/S,2026-11-08,Material change in fundamentals or >30% price move
 VAL,Valaris Ltd,5539,Commodity/shipping/energy-price driven earnings; growth reflects cycle not durable niche,2026-11-08,Material change in fundamentals or >30% price move
 PANL,Pangaea Logistics Solutions Ltd.,496,Commodity/shipping/energy-price driven earnings; growth reflects cycle not durable niche,2026-11-08,Material change in fundamentals or >30% price move
 LNG,"Cheniere Energy, Inc.",56758,"Large/mega-cap ($57B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
@@ -220,6 +223,7 @@ HURC,HURCO COMPANIES INC,134,Declining machine-tool sales; losses,2026-11-08,Mat
 RIG,Transocean Ltd.,5853,Commodity/shipping/energy-price driven earnings; growth reflects cycle not durable niche,2026-11-08,Material change in fundamentals or >30% price move
 REI,"RING ENERGY, INC.",289,Commodity/shipping/energy-price driven earnings; growth reflects cycle not durable niche,2026-11-08,Material change in fundamentals or >30% price move
 NFLX,NETFLIX INC,260382,"Large/mega-cap ($260B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
+NVT,nVent Electric plc,17165,Large well-followed electrical products; ~$18B,2026-11-08,Material change in fundamentals or >30% price move
 AEIS,ADVANCED ENERGY INDUSTRIES INC,7975,"Valuation already discounts strong growth (EV/S 3.4, EV/EBIT 47)",2026-11-08,Material change in fundamentals or >30% price move
 ACLS,AXCELIS TECHNOLOGIES INC,3065,Ion implant; SiC/China demand down; flat revenue,2026-11-08,Material change in fundamentals or >30% price move
 URI,"UNITED RENTALS, INC.",65357,"Large/mega-cap ($65B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
@@ -298,19 +302,21 @@ PTEN,PATTERSON UTI ENERGY INC,3764,Commodity/shipping/energy-price driven earnin
 AWK,"American Water Works Company, Inc.",29923,"Large/mega-cap ($30B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
 DTM,"DT Midstream, Inc.",11595,Commodity/shipping/energy-price driven earnings; growth reflects cycle not durable niche,2026-11-08,Material change in fundamentals or >30% price move
 XERS,"Xeris Biopharma Holdings, Inc.",2777,Pharma/biotech: revenue tied to few drugs/licensing; needs clinical/patent analysis outside current screen; one-off license revenue distorts growth,2026-11-08,Material change in fundamentals or >30% price move
-JBHT,HUNT J B TRANSPORT SERVICES INC,20280,"Large/mega-cap ($20B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
+JBHT,HUNT J B TRANSPORT SERVICES INC,20280,Large-cap trucking; cyclical; well-followed,2026-11-08,Material change in fundamentals or >30% price move
 LIND,"LINDBLAD EXPEDITIONS HOLDINGS, INC.",2231,"Valuation already discounts strong growth (EV/S 3.0, EV/EBIT 58)",2026-11-08,Material change in fundamentals or >30% price move
 EPD,ENTERPRISE PRODUCTS PARTNERS L.P.,79859,Commodity/shipping/energy-price driven earnings; growth reflects cycle not durable niche,2026-11-08,Material change in fundamentals or >30% price move
 NGL,NGL Energy Partners LP,1866,Commodity/shipping/energy-price driven earnings; growth reflects cycle not durable niche,2026-11-08,Material change in fundamentals or >30% price move
-RS,"RELIANCE, INC.",21243,"Large/mega-cap ($21B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
+RS,"RELIANCE, INC.",21243,Metals service center; commodity-price driven,2026-11-08,Material change in fundamentals or >30% price move
 CCC,CCC Intelligent Solutions Holdings Inc.,4539,"Valuation already discounts strong growth (EV/S 5.1, EV/EBIT 60)",2026-11-08,Material change in fundamentals or >30% price move
 WAT,WATERS CORP /DE/,44958,"Large/mega-cap ($45B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
+HNI,HNI CORP,3416,Growth from Steelcase merger; office furniture cycle,2026-11-08,Material change in fundamentals or >30% price move
 NOG,"NORTHERN OIL & GAS, INC.",2419,Oil & gas,2026-11-08,Material change in fundamentals or >30% price move
 U,Unity Software Inc.,22853,"Large/mega-cap ($23B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
 MSCI,MSCI Inc.,45832,"Large/mega-cap ($46B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
 SITM,SITIME Corp,12595,"Valuation already discounts strong growth (EV/S 18.4, EV/EBIT 0)",2026-11-08,Material change in fundamentals or >30% price move
 HUBB,HUBBELL INC,22690,"Large/mega-cap ($23B), widely followed; outside small/mid-cap mandate",2026-11-08,Material change in fundamentals or >30% price move
 OKE,ONEOK INC /NEW/,53708,Commodity/shipping/energy-price driven earnings; growth reflects cycle not durable niche,2026-11-08,Material change in fundamentals or >30% price move
+CDRE,"Cadre Holdings, Inc.",1399,Safety equipment roll-up; share count +20%/3y,2026-11-08,Material change in fundamentals or >30% price move
 ALNT,ALLIENT INC,1383,~35x EBIT; low growth,2026-11-08,Material change in fundamentals or >30% price move
 ICCC,IMMUCELL CORP /DE/,89,Pharma/biotech: revenue tied to few drugs/licensing; needs clinical/patent analysis outside current screen; one-off license revenue distorts growth,2026-11-08,Material change in fundamentals or >30% price move
 AEHR,AEHR TEST SYSTEMS,1757,"Valuation already discounts strong growth (EV/S 25.8, EV/EBIT 0)",2026-11-08,Material change in fundamentals or >30% price move
