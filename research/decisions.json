@@ -591,8 +591,8 @@
  },
  "NPKI": {
   "status": "watch",
-  "reason": "Composite matting for utility/grid/infrastructure sites (screen 2026-11-23): growth ~27%, op margin ~17%, FCF ~9.5%, EV/S ~2.4, market-implied 10y growth ~5%; share count down ~9%/3y. Not yet verified against filings",
-  "revisit": "Deep research next run: organic vs acquired growth, rental fleet economics, utility capex dependence"
+  "reason": "Verified 2026-11-24 (XBRL/10-Q): post-divestiture revenue $217.5M (2024) -> $277.0M (2025, incl. ~$42M acquisition spend); Q3-26 revenue $76.3M (+11% y/y); TTM FCF only $10.4M (CFO $68.2M - capex $57.8M, ~3% margin; screen's 9.5% used FY25); ~$700M mkt cap at $8.34, ~13.7x TTM EBIT; three 8-K 5.02 management changes Jul-Sep 2026. Not compelling: capital-heavy rental fleet, decelerating growth.",
+  "revisit": "FCF margin >8% or organic growth re-acceleration"
  },
  "VIAV": {
   "status": "rejected",

@@ -1,10 +1,10 @@
 ticker,strategy,entry_date,entry_price,mark_date,mark_price,total_return_net,benchmark,benchmark_return,excess,status,vs_bear,vs_base,vs_bull,note
-AEIS,HG,,,,,,,,,,,,,price fetch failed (rate limit?) - status NOT changed; retry next run
-CAMT,HG,2026-11-09,105.04,2026-11-23,100.1,-0.0489,SMH,-0.0559,0.0069,active,50,113,197,
-TMDX,HG,,,,,,,,,,,,,price fetch failed (rate limit?) - status NOT changed; retry next run
-KLIC,HG,,,,,,,,,,,,,price fetch failed (rate limit?) - status NOT changed; retry next run
+AEIS,HG,2026-11-09,219.3,2026-11-24,199.23,-0.0929,SMH,-0.1245,0.0316,active,85,246,396,
+CAMT,HG,2026-11-09,105.04,2026-11-24,94.59,-0.1013,SMH,-0.1245,0.0232,active,50,113,197,
+TMDX,HG,2026-11-09,93.79,2026-11-24,93.42,-0.0059,IHI,-0.0186,0.0127,active,52,124,270,
+KLIC,HG,2026-11-09,68.97,2026-11-24,57.59,-0.1667,SMH,-0.1245,-0.0422,active,26,52,101,
 IESC,CORE,,,,,,,,,,,,,price fetch failed (rate limit?) - status NOT changed; retry next run
-POWL,CORE,,,,,,,,,,,,,price fetch failed (rate limit?) - status NOT changed; retry next run
-MPTI,CORE,2026-11-09,63.95,2026-11-23,67.33,0.0424,IWM,-0.0594,0.1017,active,40,70,117,
-BKTI,CORE,2026-11-09,69.36,2026-11-23,57.85,-0.1743,IWM,-0.0594,-0.1149,active,32,76,150,
-PSIX,CORE,2026-11-09,37.72,2026-11-23,31.03,-0.1856,IWM,-0.0594,-0.1262,active,18,45,72,
+POWL,CORE,2026-11-09,141.65,2026-11-24,153.88,0.0848,XLI,-0.0431,0.1279,active,44,110,197,
+MPTI,CORE,2026-11-09,63.95,2026-11-24,61.9,-0.0417,IWM,-0.0544,0.0127,active,40,70,117,
+BKTI,CORE,2026-11-09,69.36,2026-11-24,56.81,-0.1891,IWM,-0.0544,-0.1347,active,32,76,150,
+PSIX,CORE,2026-11-09,37.72,2026-11-24,31.19,-0.1814,IWM,-0.0544,-0.127,active,18,45,72,

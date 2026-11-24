@@ -4,6 +4,16 @@ Log of every research run: what was done, what changed, and what was learned. Ne
 
 ---
 
+## 2026-11-24 — Daily run
+- Owned (closes 11-24): VOO $660.71 (−0.5%), IESC $166.04 (−2.9%), AEIS $199.23 (−6.9%).
+- IESC Form 4s (FACT, filed 11-24, transactions 11-20): CEO Simmes — 40,000 cash-settled PSUs vested and paid in cash (code S at $156.06; not an open-market sale), plus PSU vesting/tax withholding; CFO and GC — PSU vesting + tax withholding. No red flag. ESP Form 4 (not read).
+- NPKI deep check: screen overstated quality (FCF margin ~3% TTM vs 9.5% screen; growth partly acquired; Q3 +11%). Stays watch, not candidate.
+- NVDA prediction scored: owner incorrect (close $155.38 vs $184.51).
+- Paper portfolio: 8 of 9 marked (IESC unmarked, rate limit).
+- Notifications: none — threshold not met.
+
+---
+
 ## 2026-11-23 (Monday) — Daily run + weekly screen
 - Filings since 11-21: none on any watchlist/paper ticker.
 - Owned (closes 11-23): VOO $663.91 (+4.5%), IESC $170.92 (+9.5%), AEIS $214.07 (+12.6%) — broad rebound after the 11-20 selloff.
