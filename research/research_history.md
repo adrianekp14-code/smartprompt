@@ -4,6 +4,14 @@ Log of every research run: what was done, what changed, and what was learned. Ne
 
 ---
 
+## 2026-11-25 — Daily run
+- Owned (closes 11-25): VOO $658.87 (−0.3%), IESC $171.98 (paper-tracker mark), AEIS $197.03 (−1.1%). No IESC/AEIS filings.
+- CAMT Schedule 13D/A (FACT): controlling holder Priortech bought shares in the open market 11-18…11-24 (e.g., 10,000 @ $99.88 on 11-18; 39,050 @ $99.92 on 11-19; 37,000 @ $91.73 on 11-20; further buys through 11-24); now 9,783,254 shares = 20.94%. Insider buying during the selloff — modest positive signal; CAMT stock verdict stays "fair" (valuation unchanged).
+- LMAT Form 4 (not read). Paper portfolio fully marked: HG EW −8.9% vs −10.3%; CORE −6.2% vs −4.3%.
+- Notifications: none — threshold not met.
+
+---
+
 ## 2026-11-24 — Daily run
 - Owned (closes 11-24): VOO $660.71 (−0.5%), IESC $166.04 (−2.9%), AEIS $199.23 (−6.9%).
 - IESC Form 4s (FACT, filed 11-24, transactions 11-20): CEO Simmes — 40,000 cash-settled PSUs vested and paid in cash (code S at $156.06; not an open-market sale), plus PSU vesting/tax withholding; CFO and GC — PSU vesting + tax withholding. No red flag. ESP Form 4 (not read).
