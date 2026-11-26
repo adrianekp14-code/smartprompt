@@ -4,6 +4,12 @@ Log of every research run: what was done, what changed, and what was learned. Ne
 
 ---
 
+## 2026-11-26 (Thanksgiving; US markets and EDGAR closed) — Daily run
+- No new filings on watchlist/paper tickers since the 11-25 run; no price changes (market closed). Paper portfolio not re-marked.
+- Notifications: none.
+
+---
+
 ## 2026-11-25 — Daily run
 - Owned (closes 11-25): VOO $658.87 (−0.3%), IESC $171.98 (paper-tracker mark), AEIS $197.03 (−1.1%). No IESC/AEIS filings.
 - CAMT Schedule 13D/A (FACT): controlling holder Priortech bought shares in the open market 11-18…11-24 (e.g., 10,000 @ $99.88 on 11-18; 39,050 @ $99.92 on 11-19; 37,000 @ $91.73 on 11-20; further buys through 11-24); now 9,783,254 shares = 20.94%. Insider buying during the selloff — modest positive signal; CAMT stock verdict stays "fair" (valuation unchanged).
