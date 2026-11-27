@@ -4,6 +4,15 @@ Log of every research run: what was done, what changed, and what was learned. Ne
 
 ---
 
+## 2026-11-27 (half day) — Daily run
+- Owned (closes 11-27, 1 PM ET early close): VOO $669.79 (+1.7%), IESC $178.64 (+3.9%), AEIS $207.01 (+5.1%).
+- IESC S-3ASR (FACT): resale registration of the 430,974 shares issued to INNOVATE Corp. (DBM seller) under the 2026-08-07 Transaction Agreement; IESC sells nothing and receives no proceeds. Possible ~1% supply overhang; not dilution.
+- IESC Form 4s (FACT, transactions 11-24/25): director David B. Gendell bought 3,000 sh @ $163 and 1,000 sh @ $164 (open market, ~$0.65M); CEO Simmes bought 247 sh @ $166.60; annual equity awards (code A) to Gendell (Exec. Chair), Simmes, McLauchlin, Allen, Newman. Insider buying — modest positive; no red flag.
+- Paper portfolio fully marked: HG EW −5.7% vs −7.6%; CORE −3.4% vs −2.6%.
+- Notifications: none — IESC send criteria still await DBM economics (Q1 FY27 10-Q).
+
+---
+
 ## 2026-11-26 (Thanksgiving; US markets and EDGAR closed) — Daily run
 - No new filings on watchlist/paper tickers since the 11-25 run; no price changes (market closed). Paper portfolio not re-marked.
 - Notifications: none.
